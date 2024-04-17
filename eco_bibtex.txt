@@ -1,0 +1,1650 @@
+@article{herzig1978ecology,
+  title={On the ecology of the fruit bat, Rousettus aegyptiacus leachi (A. Smith, 1829) in the Tsitsikama Coastal National Park},
+  author={Herzig-Straschil, B and Robinson, GA},
+  journal={Koedoe},
+  volume={21},
+  number={1},
+  pages={101--110},
+  year={1978}
+}
+
+@article{kwiecinski1999rousettus,
+  title={Rousettus egyptiacus},
+  author={Kwiecinski, Gary G and Griffiths, Thomas A},
+  journal={Mammalian species},
+  number={611},
+  pages={1--9},
+  year={1999},
+  publisher={Oxford University Press}
+}
+
+@article{thomas1978notes,
+  title={Notes on the dry season roosting and foraging behaviour of Epomophorus gambianus and Rousettus aegyptiacus (Chiroptera: Pteropodidae)},
+  author={Thomas, Donald W and Fenton, M Brock},
+  journal={Journal of Zoology},
+  volume={186},
+  number={3},
+  pages={403--406},
+  year={1978},
+  publisher={Wiley Online Library}
+}
+
+@article{campbell2006comparative,
+  title={Comparative Roosting Ecology of Cynopterus (Chiroptera: Pteropodidae) Fruit Bats in Peninsular Malaysia 1},
+  author={Campbell, Polly and Reid, Noah M and Zubaid, Akbar and Adnan, Adura M and Kunz, Thomas H},
+  journal={Biotropica},
+  volume={38},
+  number={6},
+  pages={725--734},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+@article{funakoshi1997behavioural,
+  title={Behavioural and reproductive ecology of the dog-faced fruit bats, Cynopterus brachyotis and C. horsfieldi, in a Malaysian rainforest},
+  author={Funakoshi, Kimitake and ZUBAID, Akbar},
+  journal={Mammal Study},
+  volume={22},
+  number={1+ 2},
+  pages={95--108},
+  year={1997},
+  publisher={THE MAMMAL SOCIETY OF JAPAN}
+}
+
+@article{tan1997tent,
+  title={Tent construction and social organization in Cynopterus brachyotis (Muller)(Chiroptera: Pteropodidae) in Peninsular Malaysia},
+  author={Tan, KH and Zubaid, A and Kunz, TH},
+  journal={Journal of Natural History},
+  volume={31},
+  number={11},
+  pages={1605--1621},
+  year={1997},
+  publisher={Taylor \& Francis}
+}
+
+@article{niu2007distribution,
+  title={Distribution and underground habitats of cave-dwelling bats in China},
+  author={Niu, H and Wang, N and Zhao, L and Liu, J},
+  journal={Animal Conservation},
+  volume={10},
+  number={4},
+  pages={470--477},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@article{zhang2009recent,
+  title={Recent surveys of bats (Mammalia: Chiroptera) from China. I. Rhinolophidae and Hipposideridae},
+  author={Zhang, Libiao and Jones, Gareth and Zhang, Jinshuo and Zhu, Guangjian and Parsons, Stuart and Rossiter, Stephen J and Zhang, Shuyi},
+  journal={Acta Chiropterologica},
+  volume={11},
+  number={1},
+  pages={71--88},
+  year={2009},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+@article{voss2016roosting,
+  title={Roosting ecology of Amazonian bats: evidence for guild structure in hyperdiverse mammalian communities},
+  author={Voss, Robert S and Fleck, David W and Strauss, Richard E and Velazco, Pa{\'u}l M and Simmons, Nancy B},
+  journal={American Museum Novitates},
+  volume={2016},
+  number={3870},
+  pages={1--43},
+  year={2016},
+  publisher={BioOne}
+}
+
+@article{garbino2018roosting,
+  title={Roosting ecology of Stenodermatinae bats (Phyllostomidae): evolution of foliage roosting and correlated phenotypes},
+  author={Garbino, Guilherme ST and Tavares, Val{\'e}ria da Cunha},
+  journal={Mammal Review},
+  volume={48},
+  number={2},
+  pages={75--89},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+
+@article{angulo2008sphaeronycteris,
+  title={Sphaeronycteris toxophyllum (Chiroptera: Phyllostomidae)},
+  author={Angulo, S Rubi and R{\'\i}os, Jhony A and D{\'\i}az, M M{\'o}nica},
+  journal={Mammalian species},
+  number={814},
+  pages={1--6},
+  year={2008},
+  publisher={Oxford Academic}
+}
+
+@article{zortea2000tents,
+  title={Tents used by Vampyressa pusilla (Chiroptera: Phyllostomidae) in southeastern Brazil},
+  author={Zort{\'e}a, Marlon and De Brito, Bernardo Ferreira Alves},
+  journal={Journal of Tropical Ecology},
+  volume={16},
+  number={3},
+  pages={475--480},
+  year={2000},
+  publisher={Cambridge University Press}
+}
+
+@article{timm1984tent,
+  title={Tent construction by Vampyressa in Costa Rica},
+  author={Timm, Robert M},
+  year={1984},
+  publisher={Journal of Mammalogy}
+}
+
+@article{medway1970roost,
+  title={Roost-site selection among flat-haded bats (Tylonycteris spp.)},
+  author={Medway, Lord and Marshall, Adrian G},
+  journal={Journal of Zoology},
+  volume={161},
+  number={2},
+  pages={237--245},
+  year={1970},
+  publisher={Wiley Online Library}
+}
+
+@article{ramirez2001colony,
+  title={Colony size fluctuation of Anoura geoffroyi (Chiroptera: Phyllostomidae) and temperature characterization in a Mexican cave},
+  author={Ram{\'\i}rez-Pulido, Jos{\'e} and Galindo-Galindo, Crist{\'o}bal and Castro-Campillo, Alondra and Salame-M{\'e}ndez, Arturo and Armella, Miguel Angel},
+  journal={The Southwestern Naturalist},
+  volume={46},
+  number={3},
+  pages={358--362},
+  year={2001},
+  publisher={JSTOR}
+}
+
+@article{baumgarten1994reproductive,
+  title={Reproductive seasonality and development of Anoura geoffroyi (Chiroptera: Phyllostomidae) in central Brazil},
+  author={Baumgarten, JE and Vieira, EM},
+  journal={Mammalia},
+  volume={58},
+  number={3},
+  pages={415--422},
+  year={1994},
+  publisher={De Gruyter}
+}
+
+@article{vaughan1976roosting,
+  title={Roosting ecology of the pallid bat, Antrozous pallidus},
+  author={Vaughan, Terry A and O'Shea, Thomas J},
+  journal={Journal of Mammalogy},
+  volume={57},
+  number={1},
+  pages={19--42},
+  year={1976},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{fenton2001bat,
+  title={The bat fauna of Lamanai, Belize: roosts and trophic roles},
+  author={Fenton, MB and Bernard, E and Bouchard, S and Hollis, L and Johnston, DS and Lausen, CL and Ratcliffe, JM and Riskin, DK and Taylor, JR and Zigouris, J},
+  journal={Journal of Tropical Ecology},
+  volume={17},
+  number={4},
+  pages={511--524},
+  year={2001},
+  publisher={Cambridge University Press}
+}
+
+@book{nowak1999walker,
+  title={Walker's Mammals of the World},
+  author={Nowak, Ronald M},
+  volume={1},
+  year={1999},
+  publisher={JHU press}
+}
+
+@misc{reid2009field,
+  title={A field guide to the Mammals of Southeast Mexico and Central America},
+  author={Reid, FA},
+  year={2009},
+  publisher={New York: Oxford University Press}
+}
+
+@book{aulagnier2018mammals,
+  title={Mammals of Europe, North Africa and the Middle East},
+  author={Aulagnier, St{\'e}phane and Haffner, Patrick and Mitchell-Jones, Anthony J and Moutou, Fran{\c{c}}ois and Zima, Jan},
+  year={2018},
+  publisher={Bloomsbury Wildlife}
+}
+
+@article{salas2018artibeus,
+  title={Artibeus fraterculus (Chiroptera: Phyllostomidae)},
+  author={Salas, Jaime A and Loaiza S, Christian R and Pacheco, V{\'\i}ctor},
+  journal={Mammalian Species},
+  volume={50},
+  number={962},
+  pages={67--73},
+  year={2018},
+  publisher={Oxford University Press US}
+}
+
+@article{tello2003first,
+  title={First description of a tent used by Platyrrhinus helleri (Chiroptera: Phyllostomidae)},
+  author={Tello, Jose G and Velazco, Paul M},
+  journal={Acta Chiropterologica},
+  volume={5},
+  number={2},
+  pages={269--276},
+  year={2003},
+  publisher={BioOne}
+}
+
+@article{froidevaux2023species,
+  title={A species-level trait dataset of bats in Europe and beyond},
+  author={Froidevaux, J{\'e}r{\'e}my SP and Toshkova, Nia and Barbaro, Luc and Ben{\'\i}tez-L{\'o}pez, Ana and Kerbiriou, Christian and Le Viol, Isabelle and Pacifici, Michela and Santini, Luca and Stawski, Clare and Russo, Danilo and others},
+  journal={Scientific Data},
+  volume={10},
+  number={1},
+  pages={253},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{salinas2014winter,
+  title={Winter and summer torpor in a free-ranging subtropical desert bat: the fishing myotis (Myotis vivesi)},
+  author={Salinas R, Valeria B and Herrera M, L Gerardo and Flores-Mart{\'\i}nez, Jos{\'e} Juan and Johnston, Dave S},
+  journal={Acta Chiropterologica},
+  volume={16},
+  number={2},
+  pages={327--336},
+  year={2014},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+article{simmons1998mammals,
+  title={The mammals of Paracou, French Guiana, a Neotropical lowland rainforest fauna. Part 1, Bats. Bulletin of the AMNH; no. 237},
+  author={Simmons, Nancy B and Voss, Robert S},
+  year={1998},
+  publisher={[New York]: American Museum of Natural History}
+}
+
+@article{torres2012population,
+  title={Population dynamics, roost selection and reproductive patterns of some cave bats from western of Mexico},
+  author={Torres-Flores, Jos{\'e} Williams and L{\'o}pez-Wilchis, Ricardo and Soto-Castruita, Alejandro},
+  journal={Revista de Biologia Tropical},
+  volume={60},
+  number={3},
+  pages={1369--1389},
+  year={2012},
+  publisher={http://creativecommons. org/licenses/by/3.0}
+}
+
+@article{harrisonmacrophyllum,
+  title={Macrophyllum macrophyllum by David L. Harrison},
+  author={Harrison, DL},
+  year={1975},
+  journal={Mammalian Species},
+  volume={},
+  number={62},
+  pages={1--3},
+  publisher={American Society of Mammalogists},
+}
+
+@article{weinbeer2004morphological,
+  title={Morphological characteristics predict alternate foraging strategy and microhabitat selection in the orange-bellied bat, Lampronycteris brachyotis},
+  author={Weinbeer, Moritz and Kalko, Elisabeth KV},
+  journal={Journal of Mammalogy},
+  volume={85},
+  number={6},
+  pages={1116--1123},
+  year={2004},
+  publisher={American Society of Mammalogists}
+}
+
+@article{grafe2011novel,
+  title={A novel resource--service mutualism between bats and pitcher plants},
+  author={Grafe, T Ulmar and Sch{\"o}ner, Caroline R and Kerth, Gerald and Junaidi, Anissa and Sch{\"o}ner, Michael G},
+  journal={Biology Letters},
+  volume={7},
+  number={3},
+  pages={436--439},
+  year={2011},
+  publisher={The Royal Society}
+}
+
+@article{gabadage2018new,
+  title={A new record of the rare Hardwicke’s Woolly Bat Kerivoula hardwickii (Horsefield, 1824)(Mammalia: Chiroptera: Vespertilionidae) after 23 years from a lowland rainforest of Sri Lanka},
+  author={Gabadage, D and Edirisinghe, G and Botejue, M and Perera, K and Surasinghe, T and Karunarathna, S},
+  journal={Journal of Threatened Taxa},
+  volume={10},
+  number={10},
+  pages={12344--12349},
+  year={2018}
+}
+
+@book{nowak1999walker,
+  title={Walker's Mammals of the World},
+  author={Nowak, Ronald M},
+  volume={1},
+  year={1999},
+  publisher={JHU press}
+}
+
+@article{brigham1991flexibility,
+  title={Flexibility in foraging and roosting behaviour by the big brown bat (Eptesicus fuscus)},
+  author={Brigham, R Mark},
+  journal={Canadian Journal of Zoology},
+  volume={69},
+  number={1},
+  pages={117--121},
+  year={1991},
+  publisher={NRC Research Press Ottawa, Canada}
+}
+
+@article{lausen2002roosting,
+  title={Roosting behaviour and roost selection of female big brown bats (Eptesicus fuscus) roosting in rock crevices in southeastern Alberta},
+  author={Lausen, Cori L and Barclay, Robert MR},
+  journal={Canadian Journal of Zoology},
+  volume={80},
+  number={6},
+  pages={1069--1076},
+  year={2002},
+  publisher={NRC Research Press Ottawa, Canada}
+}
+
+@article{wohlgenant1994roost,
+  title={Roost interactions between the common vampire bat (Desmodus rotundus) and two frugivorous bats (Phyllostomus discolor and Sturnira lilium) in Guanacaste, Costa Rica},
+  author={Wohlgenant, Timothy J},
+  journal={Biotropica},
+  pages={344--348},
+  year={1994},
+  publisher={JSTOR}
+}
+
+@article{cloutier1992carollia,
+  title={Carollia perspicillata},
+  author={Cloutier, Danielle and Thomas, Donald W},
+  journal={Mammalian species},
+  number={417},
+  pages={1--9},
+  year={1992},
+  publisher={Oxford University Press}
+}
+
+@incollection{timm1987tent,
+  title={Tent construction by bats of the genera Artibeus and Uroderma},
+  author={Timm, Robert M},
+  year={1987},
+  publisher={Field Museum of Natural History}
+}
+
+
+@article{lopez2006cueva,
+  title={Cueva del Diablo: a Bat cave in Tepoztlan},
+  author={Lopez-Segurajauregui, G and Toledo-Gutierrez, K and Medellin, RA},
+  journal={Association for Mexican Cave Studies Bulletin},
+  volume={19},
+  pages={264--270},
+  year={2006}
+}
+
+@article{kwiecinski1999rousettus,
+  title={Rousettus egyptiacus},
+  author={Kwiecinski, Gary G and Griffiths, Thomas A},
+  journal={Mammalian species},
+  number={611},
+  pages={1--9},
+  year={1999},
+  publisher={Oxford University Press}
+}
+
+@article{chen2002echolocation,
+  title={Echolocation sound waves, morphological features and foraging strategies in Hipposideros pratti},
+  author={Chen, Min and Feng, Jiang and Li, Zhenxin and Zhou, Jiang and Zhao, Huihua and Zhang, Shuyi and Sheng, Lianxi},
+  journal={Ying Yong Sheng tai xue bao= The Journal of Applied Ecology},
+  volume={13},
+  number={12},
+  pages={1629--1632},
+  year={2002}
+}
+
+@article{moreno2000simulation,
+  title={A simulation model of Mexican long-nosed bat (Leptonycteris nivalis) migration},
+  author={Moreno-Valdez, Arnulfo and Grant, William E and Honeycutt, Rodney L},
+  journal={Ecological Modelling},
+  volume={134},
+  number={2-3},
+  pages={117--127},
+  year={2000},
+  publisher={Elsevier}
+}
+
+@article{arias2006effectiveness,
+  title={Effectiveness of bats as pollinators of Stenocereus stellatus (Cactaceae) in wild, managed in situ, and cultivated populations in La Mixteca Baja, central Mexico},
+  author={Arias-C{\'o}yotl, Ethel and Stoner, Kathryn E and Casas, Alejandro},
+  journal={American Journal of Botany},
+  volume={93},
+  number={11},
+  pages={1675--1683},
+  year={2006},
+  publisher={Wiley Online Library}
+}
+
+@article{pavey1998colony,
+  title={Colony sizes, roost use and foraging ecology of Hipposideros diadema reginae, a rare bat from tropical Australia},
+  author={Pavey, Chris R},
+  journal={Pacific Conservation Biology},
+  volume={4},
+  number={3},
+  pages={232--239},
+  year={1998},
+  publisher={CSIRO Publishing}
+}
+
+@article{korine2005fruit,
+  title={Fruit detection and discrimination by small fruit-eating bats (Phyllostomidae): echolocation call design and olfaction},
+  author={Korine, Carmi and Kalko, Elisabeth KV},
+  journal={Behavioral Ecology and Sociobiology},
+  volume={59},
+  pages={12--23},
+  year={2005},
+  publisher={Springer}
+}
+
+@article{lewis1987vampyressa,
+  title={Vampyressa pusilla},
+  author={Lewis, Susan E and Wilson, Don E},
+  journal={Mammalian Species},
+  number={292},
+  pages={1--5},
+  year={1987},
+  publisher={Oxford University Press}
+}
+
+@article{mcguire2023heterothermic,
+  title={Heterothermic Migration Strategies in Flying Vertebrates},
+  author={McGuire, Liam P and Leys, Ryan and Webber, Quinn MR and Clerc, Jeff},
+  journal={Integrative and Comparative Biology},
+  pages={icad053},
+  year={2023},
+  publisher={Oxford University Press}
+}
+
+@misc{boyles2013global,
+  title={A global heterothermic continuum in mammals},
+  author={Boyles, Justin G and Thompson, Amy B and McKechnie, Andrew E and Malan, Ezit and Humphries, Murray M and Careau, Vincent},
+  journal={Global ecology and biogeography},
+  volume={22},
+  number={9},
+  pages={1029--1039},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+@article{ferrell1991platyrrhinus,
+  title={Platyrrhinus helleri},
+  author={Ferrell, Carolyn S and Wilson, Don E},
+  journal={Mammalian species},
+  number={373},
+  pages={1--5},
+  year={1991},
+  publisher={Oxford University Press}
+}
+
+@article{mcnab1971structure,
+  title={The structure of tropical bat faunas},
+  author={McNab, Brian K},
+  journal={Ecology},
+  volume={52},
+  number={2},
+  pages={352--358},
+  year={1971},
+  publisher={Wiley Online Library}
+}
+
+@article{eguren2014tylonycteris,
+  title={Tylonycteris pachypus (Chiroptera: Vespertilionidae)},
+  author={Eguren, Rachel E and McBee, Karen},
+  journal={Mammalian Species},
+  volume={46},
+  number={910},
+  pages={33--39},
+  year={2014},
+  publisher={Allen Press}
+}
+
+@article{genoways1972stenoderma,
+  title={Stenoderma rufum},
+  author={Genoways, Hugh H and Baker, Robert J},
+  journal={Mammalian Species},
+  number={18},
+  pages={1--4},
+  year={1972},
+  publisher={Oxford University Press}
+}
+
+@article{muchhala2002flower,
+  title={Flower visitation by bats in Cloud Forests of Western Ecuador1},
+  author={Muchhala, Nathan and Jarrin-V, Pablo},
+  journal={Biotropica},
+  volume={34},
+  number={3},
+  pages={387--395},
+  year={2002},
+  publisher={Wiley Online Library}
+}
+
+@article{miller2013roost,
+  title={Roost-site characteristics of the pallid bat (Antrozous pallidus) in the Red Hills of Kansas and Oklahoma},
+  author={Miller, Jeffrey C and Jensen, William E},
+  journal={Transactions of the Kansas Academy of Science},
+  volume={116},
+  number={1--2},
+  pages={1--10},
+  year={2013},
+  publisher={BioOne}
+}
+
+@article{aliperti2017using,
+  title={Using behavioral and stable isotope data to quantify rare dietary plasticity in a temperate bat},
+  author={Aliperti, Jaclyn R and Kelt, Douglas A and Heady III, Paul A and Frick, Winifred F},
+  journal={Journal of Mammalogy},
+  volume={98},
+  number={2},
+  pages={340--349},
+  year={2017},
+  publisher={Oxford University Press US}
+}
+
+@article{frick2009facultative,
+  title={Facultative nectar-feeding behavior in a gleaning insectivorous bat (Antrozous pallidus)},
+  author={Frick, Winifred F and Heady III, Paul A and Hayes, John P},
+  journal={Journal of Mammalogy},
+  volume={90},
+  number={5},
+  pages={1157--1164},
+  year={2009},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{otalora2013marine,
+  title={Marine and terrestrial food sources in the diet of the fish-eating myotis (Myotis vivesi)},
+  author={Ot{\'a}lora-Ardila, A{\'\i}da and Herrera M, L Gerardo and Flores-Mart{\'\i}nez, Jos{\'e} Juan and Voigt, Christian C},
+  journal={Journal of Mammalogy},
+  volume={94},
+  number={5},
+  pages={1102--1110},
+  year={2013},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{escobedo2006geographic,
+  title={Geographic distribution and some taxonomic comments of Micronycteris schmidtorum Sanborn (Chiroptera: Phyllostomidae) in Mexico},
+  author={Escobedo-Cabrera, Enrique and Leon-Paniagua, Livia and Arroyo-Cabrales, Joaquin},
+  journal={Caribbean Journal of Science},
+  volume={42},
+  number={1},
+  pages={129},
+  year={2006},
+  publisher={UNIVERSITY OF PUERTO RICO}
+}
+
+@article{kunz1992mesophylla,
+  title={Mesophylla macconnelli},
+  author={Kunz, Thomas H and Pena, Idalia M},
+  journal={Mammalian Species},
+  number={405},
+  pages={1--5},
+  year={1992},
+  publisher={Oxford University Press}
+}
+
+@book{reid1997field,
+  title={A field guide to the mammals of Central America and Southeast Mexico},
+  author={Reid, Fiona},
+  year={1997},
+  publisher={Oxford University Press}
+}
+
+@article{harrison1975macrophyllum,
+  title={Macrophyllum macrophyllum},
+  author={Harrison, David L},
+  journal={Mammalian Species},
+  number={62},
+  pages={1--3},
+  year={1975},
+  publisher={Oxford University Press}
+}
+
+@article{meyer2005home,
+  title={Home-range size and spacing patterns of Macrophyllum macrophyllum (Phyllostomidae) foraging over water},
+  author={Meyer, Christoph FJ and Weinbeer, Moritz and Kalko, Elisabeth KV},
+  journal={Journal of Mammalogy},
+  volume={86},
+  number={3},
+  pages={587--598},
+  year={2005},
+  publisher={American Society of Mammalogists}
+}
+
+@book{ceballos2014mammals,
+  title={Mammals of Mexico},
+  author={Ceballos, Gerardo},
+  year={2014},
+  publisher={JHU press}
+% pages 698--699
+}
+
+@article{humphrey1983guild,
+  title={Guild structure of surface-gleaning bats in Panama},
+  author={Humphrey, Stephen R and Bonaccorso, Frank J and Zinn, Terry L},
+  journal={Ecology},
+  volume={64},
+  number={2},
+  pages={284--294},
+  year={1983},
+  publisher={Wiley Online Library}
+}
+
+
+@article{csorba2011new,
+  title={A new species of Glischropus from the Indochinese subregion (Mammalia: Chiroptera: Vespertilionidae)},
+  author={Csorba, Gabor},
+  journal={Zootaxa},
+  volume={2925},
+  number={1},
+  pages={41--48},
+  year={2011}
+}
+
+@article{arroyo1997enchisthenes,
+  title={Enchisthenes hartii},
+  author={Arroyo-Cabrales, Joaqu{\'\i}n and Owen, Robert D},
+  journal={Mammalian Species},
+  number={546},
+  pages={1--4},
+  year={1997},
+  publisher={Oxford University Press}
+}
+
+@article{villalobos2016seed,
+  title={Seed predation by the wrinkle-faced bat Centurio senex: a new case of this unusual feeding strategy in Chiroptera},
+  author={Villalobos-Chaves, David and Padilla-Alv{\'a}rez, Sergio and Rodr{\'\i}guez-Herrera, Bernal},
+  journal={Journal of Mammalogy},
+  volume={97},
+  number={3},
+  pages={726--733},
+  year={2016},
+  publisher={Oxford University Press US}
+}
+
+@article{jennings2004echolocation,
+  title={Echolocation calls and wing morphology of bats from the West Indies},
+  author={Jennings, Nancy Vaughan and Parsons, Stuart and Barlow, Kate E and Gannon, Michael R},
+  journal={Acta Chiropterologica},
+  volume={6},
+  number={1},
+  pages={75--90},
+  year={2004},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+@article{goodwin1970ecology,
+  title={The ecology of Jamaican bats},
+  author={Goodwin, Robert E},
+  journal={Journal of Mammalogy},
+  volume={51},
+  number={3},
+  pages={571--579},
+  year={1970},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{whitaker1980foods,
+  title={Foods eaten by some bats from Costa Rica and Panama},
+  author={Whitaker, John O and Findley, James S},
+  journal={Journal of Mammalogy},
+  volume={61},
+  number={3},
+  pages={540--544},
+  year={1980},
+  publisher={JSTOR}
+}
+
+@article{cole2006leptonycteris,
+  title={Leptonycteris curasoae},
+  author={Cole, F Russell and Wilson, Don E},
+  journal={Mammalian Species},
+  number={796},
+  pages={1--3},
+  year={2006},
+  publisher={Oxford Academic}
+}
+
+
+@article{hodgkison2004habitat,
+  title={Habitat structure, wing morphology, and the vertical stratification of Malaysian fruit bats (Megachiroptera: Pteropodidae)},
+  author={Hodgkison, Robert and Balding, Sharon T and Zubaid, Akbar and Kunz, Thomas H},
+  journal={Journal of Tropical Ecology},
+  volume={20},
+  number={6},
+  pages={667--673},
+  year={2004},
+  publisher={Cambridge University Press}
+}
+
+@article{hodgkison2006balionycteris,
+  title={Balionycteris maculata},
+  author={Hodgkison, Robert and Kunz, Thomas H},
+  journal={Mammalian Species},
+  number={793},
+  pages={1--3},
+  year={2006},
+  publisher={Oxford Academic}
+}
+
+@article{soto2006diet,
+  title={Diet of two nectarivorous bats, Erophylla sezekorni and Monophyllus redmani (Phyllostomidae), on Puerto Rico},
+  author={Soto-Centeno, J Angel and Kurta, Allen},
+  journal={Journal of Mammalogy},
+  volume={87},
+  number={1},
+  pages={19--26},
+  year={2006},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@incollection{eisenberg1989mammals,
+  title={Mammals of the Neotropics, Volume 1: The Northern Neotropics: Panama, Colombia, Venezuela, Guyana, Suriname, French Guiana},
+  author={Eisenberg, John Frederick},
+  booktitle={Mammals of the Neotropics, Volume 1: The Northern Neotropics: Panama, Colombia, Venezuela, Guyana, Suriname, French Guiana},
+  pages={449--449},
+  year={1989}
+}
+
+@article{audet1993morphology,
+  title={Morphology, karyology, and echolocation calls of Rhogeessa (Chiroptera: Vespertilionidae) from the Yucatan Peninsula},
+  author={Audet, Doris and Engstrom, Mark D and Fenton, M Brock},
+  journal={Journal of Mammalogy},
+  volume={74},
+  number={2},
+  pages={498--502},
+  year={1993},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{lino2014prey,
+  title={Prey selection by Rhinolophus hipposideros (Chiroptera, Rhinolophidae) in a modified forest in Southwest Europe},
+  author={Lino, Ana and Fonseca, Carlos and Goiti, Urtzi and Pereira, Maria Jo{\~a}o Ramos},
+  journal={Acta Chiropterologica},
+  volume={16},
+  number={1},
+  pages={75--83},
+  year={2014},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+
+@article{adams1989pteronotus,
+  title={Pteronotus davyi},
+  author={Adams, James K},
+  journal={Mammalian species},
+  number={346},
+  pages={1--5},
+  year={1989},
+  publisher={Oxford University Press}
+}
+
+@article{howell1973food,
+  title={Food habits of some Costa Rican bats},
+  author={Howell, DoNNA J and Burch, Derek},
+  journal={Revista de Biolog{\'\i}a Tropical},
+  volume={21},
+  number={2},
+  pages={281--294},
+  year={1973}
+}
+
+@article{gual2021we,
+  title={We eat meat: a review of carnivory in bats},
+  author={Gual-Su{\'a}rez, Fernando and Medellin, Rodrigo A},
+  journal={Mammal Review},
+  volume={51},
+  number={4},
+  pages={540--558},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+
+
+@article{castillo2022first,
+  title={First evidence of frugivory in Gardnerycteris crenulatum (Chiroptera: Phyllostomidae)},
+  author={Castillo-Figueroa, Dennis and Tarr{\'a}-Jaramillo, Bryan A and Penuela-Salgado, Monica M and Giraldo-Mart{\'\i}nez, Carlos A and Rodr{\'\i}guez-Le{\'o}n, Carlos H},
+  journal={Acta Amazonica},
+  volume={52},
+  pages={38--41},
+  year={2022},
+  publisher={SciELO Brasil}
+}
+
+
+@article{norberg1987ecological,
+  title={Ecological morphology and flight in bats (Mammalia; Chiroptera): wing adaptations, flight performance, foraging strategy and echolocation},
+  author={Norberg, Ulla M and Rayner, Jeremy MV},
+  journal={Philosophical Transactions of the Royal Society of London. B, Biological Sciences},
+  volume={316},
+  number={1179},
+  pages={335--427},
+  year={1987},
+  publisher={The Royal Society London}
+}
+
+@article{kruskop2011new,
+  title={New data on the bat fauna of Con Dao Islands (Ba Ria-Vung Tau Province, Vietnam)},
+  author={Kruskop, Sergey V},
+  journal={Russian Journal of Theriology. Русский териологический журнал},
+  volume={10},
+  number={2},
+  pages={37--46},
+  year={2011},
+  publisher={Общество с ограниченной ответственностью Товарищество научных изданий КМК}
+}
+
+
+@article{chiu2010effects,
+  title={Effects of competitive prey capture on flight behavior and sonar beam pattern in paired big brown bats, Eptesicus fuscus},
+  author={Chiu, Chen and Reddy, Puduru Viswanadha and Xian, Wei and Krishnaprasad, Perinkulam S and Moss, Cynthia F},
+  journal={Journal of Experimental Biology},
+  volume={213},
+  number={19},
+  pages={3348--3356},
+  year={2010},
+  publisher={Company of Biologists}
+}
+
+@article{geggie1985comparison,
+  title={A comparison of foraging by Eptesicus fuscus (Chiroptera: Vespertilionidae) in urban and rural environments},
+  author={Geggie, JF and Fenton, MB},
+  journal={Canadian Journal of Zoology},
+  volume={63},
+  number={2},
+  pages={263--266},
+  year={1985},
+  publisher={NRC Research Press Ottawa, Canada}
+}
+
+
+@article{kalko2008flying,
+  title={Flying high—assessing the use of the aerosphere by bats},
+  author={Kalko, Elisabeth KV and Estrada Villegas, Sergio and Schmidt, Michael and Wegmann, Martin and Meyer, Christoph FJ},
+  journal={Integrative and Comparative Biology},
+  volume={48},
+  number={1},
+  pages={60--73},
+  year={2008},
+  publisher={Oxford University Press}
+}
+
+
+@article{swanepoel1983brachyphylla,
+  title={Brachyphylla cavernarum},
+  author={Swanepoel, Pierre and Genoways, Hugh H},
+  journal={Mammalian species},
+  number={205},
+  pages={1--6},
+  year={1983},
+  publisher={JSTOR}
+}
+
+@article{jones2003mysterious,
+  title={Mysterious Mystacina: how the New Zealand short-tailed bat (Mystacina tuberculata) locates insect prey},
+  author={Jones, Gareth and Webb, Peter I and Sedgeley, Jane A and O'Donnell, Colin FJ},
+  journal={Journal of Experimental Biology},
+  volume={206},
+  number={23},
+  pages={4209--4216},
+  year={2003},
+  publisher={Company of Biologists}
+}
+
+@article{daniel1979new,
+  title={The New Zealand short-tailed bat, Mystacina tuberculata; a review of present knowledge},
+  author={Daniel, MJ},
+  journal={New Zealand journal of zoology},
+  volume={6},
+  number={2},
+  pages={357--370},
+  year={1979},
+  publisher={Taylor \& Francis}
+}
+
+@article{mitchell1965natural,
+  title={A natural history study of the funnel-eared bat, Natalus stramineus},
+  author={Mitchell, George Clay},
+  year={1965},
+  publisher={The University of Arizona.}
+}
+
+@article{garcia2011some,
+  title={Some insect prey consumed by Peropteryx kappleri Peters, 1867 (Chiroptera: Emballonuridae) in Northern Venezuela},
+  author={Garc{\'\i}a, Franger J and Machado, Marjorie and N{\'u}{\~n}ez, Jos{\'e} and Delgado-Jaramillo, Mariana and Aular, Luis},
+  journal={Anartia},
+  volume={23},
+  pages={27--32},
+  year={2011}
+}
+
+@article{arita1996conservation,
+  title={The conservation of cave-roosting bats in Yucatan, Mexico},
+  author={Arita, H{\'e}ctor T},
+  journal={Biological Conservation},
+  volume={76},
+  number={2},
+  pages={177--185},
+  year={1996},
+  publisher={Elsevier}
+}
+
+@book{nowak1994walker,
+  title={Walker's bats of the world},
+  author={Nowak, Ronald M},
+  year={1994},
+  publisher={JHU Press}
+}
+
+@article{arroyo1988balantiopteryx,
+  title={Balantiopteryx plicata},
+  author={Arroyo-Cabrales, Joaqu{\'\i}n and Jones, J Knox},
+  journal={Mammalian Species},
+  number={301},
+  pages={1--4},
+  year={1988},
+  publisher={Oxford University Press}
+}
+
+@article{linzey2016mammals,
+  title={Mammals of great smoky Mountains National Park: 2016 revision},
+  author={Linzey, Donald W},
+  journal={Southeastern Naturalist},
+  volume={15},
+  number={m8},
+  pages={1--93},
+  year={2016},
+  publisher={BioOne}
+}
+
+@article{watkins1972nycticeius,
+  title={Nycticeius humeralis},
+  author={Watkins, Larry C},
+  journal={Mammalian species},
+  number={23},
+  pages={1--4},
+  year={1972},
+  publisher={JSTOR}
+}
+
+@article{jonathan2013mammals,
+  title={Mammals of African},
+  author={Jonathan, Kingdon and Happold, David and Butynski, Thomas and Hoffmann, Michael and Happold, Meredith and Kalina, Jan},
+  year={2013}
+}
+
+@article{barclay1985foraging,
+  title={Foraging behavior of the African insectivorous bat, Scotophilus leucogaster},
+  author={Barclay, Robert MR},
+  journal={Biotropica},
+  pages={65--70},
+  year={1985},
+  publisher={JSTOR}
+}
+
+@article{rezsutek1993mormoops,
+  title={Mormoops megalophylla},
+  author={Rezsutek, Michael and Cameron, Guy N},
+  journal={Mammalian species},
+  number={448},
+  pages={1--5},
+  year={1993},
+  publisher={Oxford University Press}
+}
+
+@article{weber2009first,
+  title={A first assessment of home range and foraging behaviour of the African long-tongued bat Megaloglossus woermanni (Chiroptera: Pteropodidae) in a heterogeneous landscape within the Lama Forest Reserve, Benin},
+  author={Weber, Natalie and Kalko, Elisabeth KV and Fahr, Jakob},
+  journal={Acta Chiropterologica},
+  volume={11},
+  number={2},
+  pages={317--329},
+  year={2009},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+@article{decher1995myotis,
+  title={Myotis grisescens},
+  author={Decher, Jan and Choate, Jerry R},
+  journal={Mammalian Species},
+  number={510},
+  pages={1--7},
+  year={1995},
+  publisher={JSTOR}
+}
+
+@article{laval1977foraging,
+  title={Foraging behavior and nocturnal activity patterns of Missouri bats, with emphasis on the endangered species Myotis grisescens and Myotis sodalis},
+  author={LaVal, Richard K and Clawson, Richard L and LaVal, Margaret L and Caire, William},
+  journal={Journal of Mammalogy},
+  volume={58},
+  number={4},
+  pages={592--599},
+  year={1977},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{kingston2003species,
+  title={Species richness in an insectivorous bat assemblage from Malaysia},
+  author={Kingston, Tigga and Francis, Charles M and Akbar, Zubaid and Kunz, Thomas H},
+  journal={Journal of Tropical Ecology},
+  volume={19},
+  number={1},
+  pages={67--79},
+  year={2003},
+  publisher={Cambridge University Press}
+}
+
+@article{rossiter2012social,
+  title={Social organization and genetic structure: insights from codistributed bat populations},
+  author={Rossiter, Stephen J and Zubaid, Akbar and MOHD-ADNAN, ADURA and Struebig, Matthew J and Kunz, Thomas H and Gopal, Sucharita and Petit, Eric J and Kingston, Tigga},
+  journal={Molecular ecology},
+  volume={21},
+  number={3},
+  pages={647--661},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+@article{fenton1980myotis,
+  title={Myotis lucifugus},
+  author={Fenton, M Brock},
+  journal={Mammalian species},
+  number={142},
+  pages={1--8},
+  year={1980},
+  publisher={JSTOR}
+}
+
+@article{johnson2011day,
+  title={Day-roosts of Myotis leibii in the Appalachian Ridge and Valley of West Virginia},
+  author={Johnson, Joseph S and Kiser, James D and Watrous, Kristen S and Peterson, Trevor S},
+  journal={Northeastern Naturalist},
+  volume={18},
+  number={1},
+  pages={95--106},
+  year={2011},
+  publisher={BioOne}
+}
+
+@article{johnson2008spring,
+  title={Spring migration and roost selection of female Myotis leibii in Maryland},
+  author={Johnson, Joshua B and Gates, J Edward},
+  journal={Northeastern Naturalist},
+  volume={15},
+  number={3},
+  pages={453--460},
+  year={2008},
+  publisher={BioOne}
+}
+
+@misc{phelps2019myotis,
+  title={Myotis horsfieldii},
+  author={Phelps, K and Rosell-Ambal, RGB and Tabaranza, B and Heaney, L and Gonzalez, JC and Molur, S and Srinivasulu, C},
+  year={2019},
+  publisher={The IUCN Red List of Threatened Species}
+}
+
+@article{fitch1979myotis,
+  title={Myotis keenii},
+  author={Fitch, John H and Shump, Karl A},
+  journal={Mammalian Species},
+  number={121},
+  pages={1--3},
+  year={1979},
+  publisher={Oxford University Press}
+}
+
+@article{boland2009selection,
+  title={Selection of day-roosts by Keen's Myotis (Myotis keenii) at multiple spatial scales},
+  author={Boland, Julia L and Hayes, John P and Smith, Winston P and Huso, Manuela M},
+  journal={Journal of Mammalogy},
+  volume={90},
+  number={1},
+  pages={222--234},
+  year={2009},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{jung2014driving,
+  title={Driving factors for the evolution of species-specific echolocation call design in new world free-tailed bats (Molossidae)},
+  author={Jung, Kirsten and Molinari, Jes{\'u}s and Kalko, Elisabeth KV},
+  journal={PloS one},
+  volume={9},
+  number={1},
+  pages={e85279},
+  year={2014},
+  publisher={Public Library of Science San Francisco, USA}
+}
+
+@article{gillam2009bats,
+  title={Bats aloft: variability in echolocation call structure at high altitudes},
+  author={Gillam, Erin H and McCracken, Gary F and Westbrook, John K and Lee, Ya-Fu and Jensen, Michael L and Balsley, Ben B},
+  journal={Behavioral Ecology and Sociobiology},
+  volume={64},
+  pages={69--79},
+  year={2009},
+  publisher={Springer}
+}
+
+@article{fraser2012evidence,
+  title={Evidence of latitudinal migration in tri-colored bats, Perimyotis subflavus},
+  author={Fraser, Erin E and McGuire, Liam P and Eger, Judith L and Longstaffe, Fred J and Fenton, M Brock},
+  journal={PLoS One},
+  volume={7},
+  number={2},
+  pages={e31419},
+  year={2012},
+  publisher={Public Library of Science San Francisco, USA}
+}
+
+@article{shump1982lasiurus,
+  title={Lasiurus borealis},
+  author={Shump, Karl A and Shump, Ann U},
+  journal={Mammalian species},
+  number={183},
+  pages={1--6},
+  year={1982},
+  publisher={Oxford University Press}
+}
+
+@article{ramasindrazana2015evidence,
+  title={Evidence of echolocation call divergence in Hipposideros commersoni sensu stricto (E. Geoffroy, 1803) from Madagascar and correlation with body size},
+  author={Ramasindrazana, Beza and Rakotondramanana, C Fabienne and Schoeman, M Corrie and Goodman, Steven M},
+  journal={Acta Chiropterologica},
+  volume={17},
+  number={1},
+  pages={85--94},
+  year={2015},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+@misc{monadjem2019macronycteris,
+  title={Macronycteris commersoni},
+  author={Monadjem, A. and Andriafidison, D. and Cardiff, S.G. and Goodman, S. and
+ Hutson, A.M. and Jenkins, R.K.B. and Kofoky, A. and Racey, P.A. and Ranivo, J. and Ratrimomanarivo, F.H amd Razafimanahaka, J. },
+  year={2019},
+  publisher={The IUCN Red List of Threatened Species}
+}
+
+@article{duya2020fruit,
+  title={Fruit bat assemblage in different lowland forest types in the Northern Sierra Madre Mountains, Philippines},
+  author={Duya, Mariano Roy M and Heaney, Lawrence R and Fernando, Edwino S and Ong, Perry S},
+  journal={Acta Chiropterologica},
+  volume={22},
+  number={1},
+  pages={95--112},
+  year={2020},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+@article{oleksy2015impact,
+  title={The impact of the Mauritius Fruit Bat (Pteropus niger) on commercial fruit farms and possible mitigation measures},
+  author={Oleksy, Ryszard},
+  journal={Detailed final report to The Rufford Foundation},
+  year={2015}
+}
+
+@article{oleksy2019movement,
+  title={The movement ecology of the Mauritian flying fox (Pteropus niger): a long-term study using solar-powered GSM/GPS tags},
+  author={Oleksy, Ryszard Z and Ayady, Charles L and Tatayah, Vikash and Jones, Carl and Howey, Paul W and Froidevaux, J{\'e}r{\'e}my SP and Racey, Paul A and Jones, Gareth},
+  journal={Movement Ecology},
+  volume={7},
+  number={1},
+  pages={1--12},
+  year={2019},
+  publisher={BioMed Central}
+}
+
+@article{fenton1985roosting,
+  title={The roosting and foraging areas of Epomophorus wahlbergi (Pteropodidae) and Scotophilus viridis (Vespertilionidae) in Kruger national park, South Africa},
+  author={Fenton, MB and Brigham, RM and Mills, AM and Rautenbach, IL},
+  journal={Journal of Mammalogy},
+  volume={66},
+  number={3},
+  pages={461--468},
+  year={1985},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{acharya1992epomophorus,
+  title={Epomophorus wahlbergi},
+  author={Acharya, Lalita},
+  journal={Mammalian Species},
+  number={394},
+  pages={1--4},
+  year={1992},
+  publisher={Oxford University Press}
+}
+
+@article{nkrumah2016home,
+  title={Home range of Noack's round-leaf bat (Hipposideros aff. ruber) in an agricultural landscape of central Ghana},
+  author={Nkrumah, Evans E and Vallo, Peter and Klose, Stefan M and Ripperger, Simon and Badu, Ebenezer K and Drosten, Christian and Kalko, Elisabeth KV and Tschapka, Marco and Oppong, Samuel K},
+  journal={Acta Chiropterologica},
+  volume={18},
+  number={1},
+  pages={239--247},
+  year={2016},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+@article{nkrumah2016foraging,
+  title={Foraging behavior and habitat selection of Noack’s round-leaf bat (Hipposideros aff. ruber) and conservation implications},
+  author={Nkrumah, Evans E and Vallo, Peter and Klose, Stefan M and Ripperger, Simon P and Badu, Ebenezer K and Gloza-Rausch, Florian and Drosten, Christian and Kalko, Elisabeth KV and Tschapka, Marco and Oppong, Samuel K},
+  journal={Tropical Conservation Science},
+  volume={9},
+  number={4},
+  pages={1940082916680428},
+  year={2016},
+  publisher={Sage Publications Sage CA: Los Angeles, CA}
+}
+
+@article{nkrumah2017flight,
+  title={Flight activity of Noack's round-leaf bat (Hipposideros cf. ruber) at two caves in central Ghana, West Africa},
+  author={Nkrumah, Evans E and Badu, Ebenezer K and Baldwin, Heather J and Anti, Priscilla and Klose, Stefan M and Vallo, Peter and Drosten, Christian and Kalko, Elisabeth KV and Oppong, Samuel K and Tschapka, Marco},
+  journal={Acta Chiropterologica},
+  volume={19},
+  number={2},
+  pages={347--355},
+  year={2017},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+@article{scanlon2013insectivory,
+  title={Insectivory in Fijian flying foxes (Pteropodidae)},
+  author={Scanlon, Annette T and Petit, Sophie and Sternberg, Leonel da S},
+  journal={Australian Journal of Zoology},
+  volume={61},
+  number={4},
+  pages={342--349},
+  year={2013},
+  publisher={CSIRO Publishing}
+}
+
+@article{bartholomew1970thermoregulation,
+  title={Thermoregulation and heterothermy in some of the smaller flying foxes (Megachiroptera) of New Guinea},
+  author={Bartholomew, George A and Dawson, William R and Lasiewski, Robert C},
+  journal={Zeitschrift f{\"u}r vergleichende Physiologie},
+  volume={70},
+  number={2},
+  pages={196--209},
+  year={1970},
+  publisher={Springer}
+}
+
+@article{dumont2004food,
+  title={Food hardness and feeding behavior in Old World fruit bats (Pteropodidae)},
+  author={Dumont, Elizabeth R and O'neal, Reilly},
+  journal={Journal of Mammalogy},
+  volume={85},
+  number={1},
+  pages={8--14},
+  year={2004},
+  publisher={American Society of Mammalogists}
+}
+
+@article{winkelmann2000home,
+  title={Home range of the southern blossom bat, Syconycteris australis, in Papua New Guinea},
+  author={Winkelmann, John R and Bonaccorso, Frank J and Strickler, Timothy L},
+  journal={Journal of Mammalogy},
+  volume={81},
+  number={2},
+  pages={408--414},
+  year={2000},
+  publisher={American Society of Mammalogists 810 East 10th Street, PO Box 1897, Lawrence~…}
+}
+
+@article{law1993roosting,
+  title={Roosting and foraging ecology of the Queensland blossom bat (Syconycteris australis) in north-eastern New South Wales: flexibility in response to seasonal variation},
+  author={Law, Bradley S},
+  journal={Wildlife Research},
+  volume={20},
+  number={4},
+  pages={419--431},
+  year={1993},
+  publisher={CSIRO Publishing}
+}
+
+@article{best2002eumops,
+  title={Eumops auripendulus},
+  author={Best, Troy L and Hunt, John L and McWilliams, Lisa A and Smith, Kevin G},
+  journal={Mammalian Species},
+  volume={2002},
+  number={708},
+  pages={1--5},
+  year={2002},
+  publisher={BioOne}
+}
+
+@article{frank2019impact,
+  title={Impact of artificial lights on foraging of insectivorous bats in a Costa Rican cloud forest},
+  author={Frank, Tanner M and Gabbert, Whitney C and Chaves-Campos, Johel and LaVal, Richard K},
+  journal={Journal of Tropical Ecology},
+  volume={35},
+  number={1},
+  pages={8--17},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{mora2022first,
+  title={First case of piebaldism in Eumops auripendulus in Costa Rica},
+  author={Mora, Jos{\'e} M and S{\'a}nchez, Ronald},
+  journal={Therya Notes},
+  volume={3},
+  pages={164--167},
+  year={2022}
+}
+
+@article{langevin1990hypsignathus,
+  title={Hypsignathus monstrosus},
+  author={Langevin, Paul and Barclay, Robert MR},
+  journal={Mammalian species},
+  number={357},
+  pages={1--4},
+  year={1990},
+  publisher={Oxford Academic}
+}
+
+@article{shahbaz2014recent,
+  title={Recent record of Scotophilus heathii from wheat-rice based agroecosystem of Punjab},
+  author={Shahbaz, Muhammad and Javid, Arshad and Mahmood-ul-Hassan, Muhammad and Makhdoom, Syed and Hussain, Sana Ashraf and Idnan, Muhammad},
+  journal={Pakistan Journal of Zoology},
+  volume={46},
+  number={4},
+  year={2014},
+  publisher={AsiaNet Pakistan (Pvt) Ltd.}
+}
+
+@article{rahman2015habitat,
+  title={HABITAT ANALYSIS OF Scotophilus heathiiHorsfield, 1831 IN NORTHWESTERN PARTS OF PAKISTAN},
+  author={Rahman, FU and Perveen, F and Rauf, T and Salim, M and Ali, Z and Khan, S and Kamal, Z},
+  journal={JOURNAL OF ANIMAL AND PLANT SCIENCES},
+  volume={25},
+  number={3},
+  pages={731--734},
+  year={2015},
+  publisher={PAKISTAN AGRICULTURAL SCIENTISTS FORUM UNIV VETERINARY \& ANIMAL SCIENCES~…}
+}
+
+@article{rashid2016comparative,
+  title={Comparative seasonal haematology of two bat species, Scotophilus heathii and Pipistrellus pipistrellus, in a Subtropical Area of Pakistan},
+  author={Rashid, Nosheen and Irfan, Muhammad and Nadeem, Muhammad Sajid and Shabbir, Asghar},
+  journal={Pakistan Journal of Zoology},
+  volume={48},
+  number={5},
+  year={2016},
+  publisher={AsiaNet Pakistan (Pvt) Ltd.}
+}
+
+@incollection{fahr2013myopterus,
+  title={Myopterus daubentonii Daubenton's winged mouse bat},
+  author={Fahr, Jakob},
+  booktitle={Mammals of Africa, Vol. IV: Hedgehogs, shrews and bats},
+  pages={476--478},
+  year={2013},
+  publisher={Bloomsbury}
+}
+
+@article{gamboa2019molossops,
+  title={Molossops temminckii (Chiroptera: Molossidae)},
+  author={Gamboa Alurralde, Santiago and D{\'\i}az, M M{\'o}nica},
+  journal={Mammalian Species},
+  volume={51},
+  number={976},
+  pages={40--50},
+  year={2019},
+  publisher={Oxford University Press US}
+}
+
+@article{pavey2000foraging,
+  title={Foraging ecology of three species of hipposiderid bats in tropical rainforest in north-east Australia},
+  author={Pavey, Chris R and Burwell, Chris J},
+  journal={Wildlife Research},
+  volume={27},
+  number={3},
+  pages={283--287},
+  year={2000},
+  publisher={CSIRO Publishing}
+}
+
+@inproceedings{horton2015test,
+  title={Test Setup for Determination of Bat Flight Kinematics},
+  author={Horton, Brandon and Matta, Alex and Battaglia, Francine and M{\"u}ller, Rolf and Bayandor, Javid},
+  booktitle={Fluids Engineering Division Summer Meeting},
+  volume={57212},
+  pages={V001T04A004},
+  year={2015},
+  organization={American Society of Mechanical Engineers}
+}
+
+@article{jones1989foraging,
+  title={Foraging behavior and echolocation of wild horseshoe bats Rhinolophus ferrumequinum and R. hipposideros (Chiroptera, Rhinolophidae)},
+  author={Jones, Gareth and Rayner, Jeremy MV},
+  journal={Behavioral Ecology and Sociobiology},
+  volume={25},
+  pages={183--191},
+  year={1989},
+  publisher={Springer}
+}
+
+@article{eguren2014tylonycteris,
+  title={Tylonycteris pachypus (Chiroptera: Vespertilionidae)},
+  author={Eguren, Rachel E and McBee, Karen},
+  journal={Mammalian Species},
+  volume={46},
+  number={910},
+  pages={33--39},
+  year={2014},
+  publisher={Allen Press}
+}
+
+@article{gopfert1995notes,
+  title={Notes on echolocation calls food and roosting behaviour of the Old World Sucker-footed bat Myzopoda aurita (Chiroptera, Myzopodidae)},
+  author={G{\"o}pfert, MC and Wasserthal, LT},
+  journal={Zeitschrift fur Saugetierkunde},
+  volume={60},
+  number={1},
+  pages={1--8},
+  year={1995},
+  publisher={Berlin: Die Gesellschaft; Hermsdorf: In Kommission bei Dr. W. Stichel, 1926-}
+}
+
+@article{guillen2007unusual,
+  title={Unusual echolocation behavior in a small molossid bat, Molossops temminckii, that forages near background clutter},
+  author={Guill{\'e}n-Servent, Antonio and Ib{\'a}{\~n}ez, Carlos},
+  journal={Behavioral Ecology and Sociobiology},
+  volume={61},
+  pages={1599--1613},
+  year={2007},
+  publisher={Springer}
+}
+
+
+@article{rydell2020white,
+  title={White and clear wings in bats (Chiroptera)},
+  author={Rydell, Jens and Fenton, MB and Seamark, Ernest and Webala, PW and Michaelsen, Tore Christian},
+  journal={Canadian Journal of Zoology},
+  volume={98},
+  number={2},
+  pages={149--156},
+  year={2020},
+  publisher={NRC Research Press}
+}
+
+@misc{krauskopf2002,
+	title={Harpyionycteris whiteheadi},
+	author={Krauskopf, R},
+	url={https://animaldiversity.org/accounts/Harpyionycteris_whiteheadi/}
+}
+
+
+@article{mickleburgh1992old,
+  title={Old World fruit bats},
+  author={Mickleburgh, Simon P and Hutson, Anthony M and Racey, Paul A},
+  journal={An action plan for their conservation. IUCN/SSC Chiroptera Specialist Group. IUCN, Gland, Switzerland},
+  pages={1--16},
+  year={1992}
+}
+
+@article{schliemann1978myzopoda,
+  title={Myzopoda aurita},
+  author={Schliemann, Harald and Maas, Birgit},
+  journal={Mammalian Species},
+  number={116},
+  pages={1--2},
+  year={1978},
+  publisher={Oxford Academic}
+}
+
+@article{ramasindrazana2009diet,
+  title={The diet of the endemic bat Myzopoda aurita (Myzopodidae) based on fecal analysis},
+  author={Ramasindrazana, Beza and Rajemison, Balisama and Goodman, Steven M},
+  journal={African Journal of Ecology},
+  volume={45},
+  pages={645--660},
+  year={2009}
+}
+
+@article{ralisata2010monastic,
+  title={Monastic Myzopoda: the foraging and roosting ecology of a sexually segregated Malagasy endemic bat},
+  author={Ralisata, M and Andriamboavonjy, FR and Rakotondravony, D and Ravoahangimalala, OR and Randrianandrianina, FH and Racey, PA},
+  journal={Journal of Zoology},
+  volume={282},
+  number={2},
+  pages={130--139},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{macias2014narrow,
+  title={Narrow sound pressure level tuning in the auditory cortex of the bats Molossus molossus and Macrotus waterhousii},
+  author={Mac{\'\i}as, Silvio and Hechavarr{\'\i}a, Julio C and Cobo, Ariadna and Mora, Emanuel C},
+  journal={Hearing research},
+  volume={309},
+  pages={36--43},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{mckenzie1995correspondence,
+  title={Correspondence between plight morphology and foraging ecology in some palaeotropical bats},
+  author={McKenzie, NL and Gunnell, AC and Yani, M and Williams, MR},
+  journal={Australian Journal of Zoology},
+  volume={43},
+  number={3},
+  pages={241--257},
+  year={1995},
+  publisher={CSIRO Publishing}
+}
+
+@article{jones2003mysterious,
+  title={Mysterious Mystacina: how the New Zealand short-tailed bat (Mystacina tuberculata) locates insect prey},
+  author={Jones, Gareth and Webb, Peter I and Sedgeley, Jane A and O'Donnell, Colin FJ},
+  journal={Journal of Experimental Biology},
+  volume={206},
+  number={23},
+  pages={4209--4216},
+  year={2003},
+  publisher={Company of Biologists}
+}
+
+@article{breviglieri2023substrate,
+  title={Substrate gleaning: Plasticity in the foraging and echolocation behavior of the bat Molossus molossus},
+  author={Breviglieri, Crasso Paulo Bosco and da Silva, Fernando Rodrigues},
+  journal={Ecology},
+  volume={104},
+  number={1},
+  pages={e3849},
+  year={2023},
+  publisher={Wiley Online Library}
+}
+
+@article{kunz1982plecotus,
+  title={Plecotus townsendii},
+  author={Kunz, Thomas H and Martin, Robert A},
+  journal={Mammalian species},
+  number={175},
+  pages={1--6},
+  year={1982},
+  publisher={JSTOR}
+}
+
+@article{tejedor2006type,
+  title={The type locality of Natalus stramineus (Chiroptera: Natalidae): implications for the taxonomy and biogeography of the genus Natalus},
+  author={Tejedor, Adrian},
+  journal={Acta Chiropterologica},
+  volume={8},
+  number={2},
+  pages={361--380},
+  year={2006},
+  publisher={Museum and Institute of Zoology, Polish Academy of Sciences}
+}
+
+@article{yee2000peropteryx,
+  title={Peropteryx macrotis},
+  author={Yee, Donald A},
+  journal={Mammalian species},
+  volume={2000},
+  number={643},
+  pages={1--4},
+  year={2000},
+  publisher={BioOne}
+}
+
+@article{ratcliffe2003behavioural,
+  title={Behavioural flexibility: the little brown bat, Myotis lucifugus, and the northern long-eared bat, M. septentrionalis, both glean and hawk prey},
+  author={Ratcliffe, John M and Dawson, Jeff W},
+  journal={Animal Behaviour},
+  volume={66},
+  number={5},
+  pages={847--856},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@book{johnson2009notes,
+  title={Notes on foraging activity of female Myotis leibii in Maryland},
+  author={Johnson, Joshua B},
+  volume={8},
+  year={2009},
+  publisher={US Department of Agriculture, Forest Service, Northern Research Station}
+}
+
+@article{vaughan1977foraging,
+  title={Foraging behaviour of the giant leaf-nosed bat (Hipposideros commersoni)},
+  author={Vaughan, Terry A},
+  journal={African Journal of Ecology},
+  volume={15},
+  number={4},
+  pages={237--249},
+  year={1977},
+  publisher={Wiley Online Library}
+}
+
+@article{ibanez1992notes,
+  title={Notes on food habits of the black and white owl},
+  author={Iba{\~n}ez, Carlos and Ramo, Cristina and Busto, Benjam{\'\i}n},
+  journal={Condor},
+  pages={529--531},
+  year={1992},
+  publisher={JSTOR}
+}
+
+@book{kingdon2014mammals,
+  title={Mammals of Africa: Volume IV: Hedgehogs, Shrews and Bats},
+  author={Kingdon, Jonathan},
+  year={2014},
+  publisher={A\&C Black}
+}

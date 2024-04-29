@@ -25,7 +25,9 @@ This is a vector of representative body masses for the avian species considered 
 aggregated from the Cornell handbook of the birds of the world. (https://birdsoftheworld.org/bow/home)
 
 flight_masses_22_10_2022_plus_A.csv
+
 standardised_foot_scores_11_07_2023.csv
+
 These two spreadsheets are standardised presence (1) or absence (0) scores for ecological activites for the 
 bird species considered in this study. The flight style scores were expanded from the scheme of Taylor & Thomas
 (Taylor, G. & Thomas, A. Evolutionary Biomechanics (Oxford Univ. Press, 2014)), see Orkney et al., 2021 (https://doi.org/10.1038/s41559-021-01509-w)

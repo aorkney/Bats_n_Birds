@@ -1,6 +1,9 @@
 # The purpose of this script is to 
 # produce a phenogram ancestral state reconstruction plot of bird and bat dispersion over
-# wing:(wing+leg), and colour the branches by the inferred rate changes
+# wing:(wing+leg), and colour the branches by the inferred evolutionary rate changes.
+# We will also produce plots of the relative disparity within/between subclades over time, to visualise whether 
+# the evolution of birds and bats over this axis is consistent with Brownian motion (trend falls within null expectation envelope), typified by convergence (trend falls above envelope), or
+# an early burst of disparification followed by relates rates of disparification (trends falls below envelope). 
 
 
 library( geomorph ) # 4.0.5
@@ -108,6 +111,7 @@ taxa <- dimnames(bat.landmarks[['humerus']])[[3]]
 GPA.results <- get.gpa.taxa(bat.landmarks,sliders,taxa,elements)
 # The alignemnt has been performed
 
+# The following lines coerce the bat landmark data to a consistent 3D array format: 
 for(i in 1:length(GPA.results)){
 		if(dim(GPA.results[[i]]$coords)[2] <3){ # If a shape constellation is 2D, coerce 
 			shape.temp<-GPA.results[[i]]$coords # Define a dumby variable that receives the original shape data for that element
@@ -125,32 +129,19 @@ for(i in 1:length(GPA.results)){
 
 GPA.coords <- lapply( GPA.results , get.item , item = "coords" )
 GPA.Csize <- lapply( GPA.results , get.item , item = "Csize" )
-# Coordinates and centroid sizes have been extrated
-
-setwd()
-# Set work directory to the location of the phylogeny by Shi and Rabosky 
+# Coordinates and centroid sizes have been extracted; Centroid sizes will be the subject of downstream analysis 
 
 bat.tree <- read.tree('chiroptera.no_outgroups.absolute.tre')
 # This phylogeny far exceeds the number of taxa for which we have landmark constellations
 # we must therefore prune the phylogeny  
-
 pruned.tree.bats <- keep.tip(bat.tree,taxa)
-
-
-
-
-
 
 bat.proportions <- cbind((GPA.Csize$humerus)+(GPA.Csize$radius)+(GPA.Csize$handwing),
 (GPA.Csize$femur)+(GPA.Csize$tibia))
 bat.proportions <- bat.proportions/rowSums(bat.proportions)
+# Define wing/(wing+leg) trait in bats, a proxy of gross appendicular proportions 
 
-
-
-# Set the work directory
-setwd()
-# The user will need to customise this
-
+# The same steps will now be taken in birds: 
 
 # Load some requisite datasets
 load('tree.22.10.2022.RData')
@@ -170,14 +161,12 @@ avian.proportions <- cbind((Csize.birds$humerus)+(Csize.birds$radius)+(Csize.bir
 (Csize.birds$femur)+(Csize.birds$tibiotarsus))
 avian.proportions <- avian.proportions/rowSums(avian.proportions)
 
-
-
-
+# The following is a function that produces dendograms with branch evolutionary rate estimates for a given trait, tree and specified evolutionary model: 
 
 make.dendr <- function(tree, trait, model){
 	dendr <- dendro_data(as.dendrogram(force.ultrametric(tree)))
 	lab.dat <- dendr$labels
-	if(model=='BM'){
+	if(model=='BM'){ # Brownian motion specified
 		fit <- fastAnc(tree,trait)
 		Anc<- rep(NA, length(dendr$segments[,1]))
 		Anc [which(dendr$segments$x==dendr$segments$xend)] <- fit[match(tree$edge[,1],names(fit))]
@@ -190,7 +179,7 @@ make.dendr <- function(tree, trait, model){
 		dendr.mod$xend[which(dendr$segments$yend==0)] <- trait[match(lab.dat$label,names(trait)) ] # This defines the final position of each terminal branch
 	}
 
-	if(model=='EB'){
+	if(model=='EB'){ # Early burst specified 
 		mod <- mvEB(tree,trait)
 		fit<-estim(tree, data= trait, object=mod, asr=TRUE)
 
@@ -218,7 +207,7 @@ make.dendr <- function(tree, trait, model){
 		}	
 	}
 
-	Rate <- abs((dendr.mod$xend-dendr.mod$x))/(dendr.mod$y-dendr.mod$yend)
+	Rate <- abs((dendr.mod$xend-dendr.mod$x))/(dendr.mod$y-dendr.mod$yend) # Compute linear estimate of rate across branch 
 
 	return( cbind(dendr.mod, Anc,Rate ) )
 
@@ -226,9 +215,11 @@ make.dendr <- function(tree, trait, model){
 
 dendr.bat <- make.dendr(tree=pruned.tree.bats, trait=bat.proportions[pruned.tree.bats$tip,1], model='EB')
 dendr.bird <- make.dendr(tree=pruned.tree, trait=avian.proportions[pruned.tree$tip,1], model='BM')
+# Compute the disparifiation of birds and bats' gross appendicular evolution. Birds are represented by a Brownian motion model, while bats are represented by an Early Burst model. 
 
 
 dendr.col <- rbind(dendr.bat,dendr.bird)
+# Combine data for plotting. 
 
 
 plot.with.legend<-
@@ -261,9 +252,10 @@ plot.with.legend<-
 plot.with.legend+
  guides(col = guide_colourbar(ticks.colour= 'black', ticks.linewidth=6/.pt, frame.colour = 'black',
   frame.linewidth = 4/.pt))
+# Produce plot of gross appendicular skeleton evolution 
 
 legend<- cowplot::get_legend(plot.with.legend)
-
+# Extract legend
 
 plot.without.legend<-
 ggplot()+
@@ -296,10 +288,15 @@ geom_text(aes(x=c(-40,-40),y=c(0.4,0.85),label=c('birds','bats')),color='black',
 		#axis.ticks.y=element_blank(),
 		#axis.ticks.x=element_blank(),
        )
+# Plot sans legend
 
 tree.plot<-
 plot.without.legend+
 draw_plot(legend , x = -72, y = 0.6, width = 15, height = 0.2 )
+
+# The following function will take a phylogeny, trait, subsample size, and number of replicates. 
+# It applies the geiger 'Disparity Through Time' function to plot the disparification of the specified trait compared to a null simulation, 
+# under a resampled framework.
 
 resample.dtt <- function(phy, data, sample.size, repeats){
 	return <- list()
@@ -326,9 +323,11 @@ resample.dtt <- function(phy, data, sample.size, repeats){
 
 DTT.bat <- resample.dtt(phy=pruned.tree.bats,data=bat.proportions[,1],sample.size=100,repeats=100)
 DTT.bird <- resample.dtt(phy=pruned.tree,data=avian.proportions[,1],sample.size=100,repeats=100)
+# Bat and bird disparification computed 
 
 quant.bat <- runquantile(x=DTT.bat$sim[rev(order(DTT.bat$times))], probs=c(0.023,0.159,0.841,0.977), k=20)
 quant.bird <- runquantile(x=DTT.bird$sim[rev(order(DTT.bird$times))], probs=c(0.023,0.159,0.841,0.977), k=20)
+# 1 and 2 sigma quantiles of the Brownian motion null model envelopes of bird and bat disparification have been extracted. 
 
 dtt.plot.data <- function(DTT.data, probs, k, span, sim){
 	if(sim==T){
@@ -347,7 +346,7 @@ dtt.plot.data <- function(DTT.data, probs, k, span, sim){
 	colnames(smoothed) <- c('times',probs)
 	return(data.frame(smoothed))
 }
-
+# The above function takes an input disparity through time object, extracts the quatiles of the real distribution and applies a smoothing function. 
 
 ribbon.bat.sim <- dtt.plot.data(DTT.data=DTT.bat,probs=c(0.023,0.159,0.841,0.977), k=20,span=0.15, sim=T)
 
@@ -356,28 +355,11 @@ ribbon.bird.sim <- dtt.plot.data(DTT.data=DTT.bird,probs=c(0.023,0.159,0.841,0.9
 ribbon.bat.real <- dtt.plot.data(DTT.data=DTT.bat,probs=c(0.023,0.159,0.841,0.977), k=20,span=0.15, sim=F)
 
 ribbon.bird.real <- dtt.plot.data(DTT.data=DTT.bird,probs=c(0.023,0.159,0.841,0.977), k=20,span=0.15, sim=F)
+# Functons applied to extract the real and null disparification histories of bird and bat gross appendicular proportions. 
 
 
-library(png); library(grid)
+library(grid) # base; arranging plot elements 
 
-setwd()
-
-bird.img = readPNG('Bubo blakistoni_512x345.png')
-bird.img[,,2][which(bird.img[,,2]==0)]<-NA
-bird.img[,,2][which(bird.img[,,2]==1)]<-0
-bird.img[,,2][which(bird.img[,,2]!=0)]<-NA
-
-
-bat.img = readPNG('Vespertilionidae_Corynorhinus townsendii_test.png')
-bat.img[,,2][which(bat.img[,,2]==0)]<-NA
-bat.img[,,2][which(bat.img[,,2]==1)]<-0
-bat.img[,,2][which(bat.img[,,2]!=0)]<-NA
-
-#bat.g =  rasterGrob(bat.img[,,2], interpolate=F)
-#bird.g =  rasterGrob(bird.img[,,2], interpolate=F)
-
-bat.raster <- as.raster(bat.img[,,2], interpolate=F)
-bird.raster <- as.raster(bird.img[,,2], interpolate=F)
 
 back.bat <- cbind(ribbon.bat.sim, rep(mean(dendr.bat$Rate^.5,na.rm=T),dim(ribbon.bat.sim)[1] ))
 colnames(back.bat)[6]<-'f'
@@ -409,14 +391,7 @@ scale_x_continuous(breaks=c(0,.25,.5,.75,1), limits=c(0,1))+
 		axis.text.x=element_text(size=16,color='black'),
 		axis.text.y=element_text(size=16,color='black')
        )
-
-
-g <- ggplot_build(bat.disp)
-bat.raster[bat.raster == "#000000"] <- unique(g$data[[1]]["fill"])[[1]][1]
-bat.g =  rasterGrob(bat.raster, interpolate=F)
-
-bat.disp <- bat.disp +annotation_custom(grob=bat.g, xmin=.45, xmax=.85, ymin=0.9, ymax=1.5)
-
+# Produce plot of bat subclade disparification through time 
 
 back.bird <- cbind(ribbon.bird.sim, rep(mean(dendr.bird$Rate^.5,na.rm=T),dim(ribbon.bird.sim)[1] ))
 colnames(back.bird)[6]<-'f'
@@ -448,16 +423,10 @@ scale_x_continuous(breaks=c(0,.25,.5,.75,1), limits=c(0,1))+
 		axis.text.x=element_text(size=16,color='black'),
 		axis.text.y=element_text(size=16,color='black')
        )
+# Produce plot of bird subclade disparification through time 
 
-
-g <- ggplot_build(bird.disp)
-bird.raster[bird.raster == "#000000"] <- unique(g$data[[1]]["fill"])[[1]][1]
-bird.g =  rasterGrob(bird.raster, interpolate=F)
-
-bird.disp <- bird.disp +annotation_custom(grob=bird.g, xmin=.3, xmax=.75, ymin=0.4, ymax=1.8)
-
-
-library(ggpubr)
+library(ggpubr) # 0.6.0
+# Package for alligning subplots 
 
 disp.plot <- ggarrange(bat.disp,bird.disp, ncol=1)
 disp.plot <- annotate_figure(disp.plot, left = text_grob(expression(italic("subclade disparity")), 
@@ -466,17 +435,19 @@ disp.plot <- annotate_figure(disp.plot, bottom = text_grob(expression(italic("re
                color = "black", face = "bold", size = 30, vjust=-.75, hjust=0.3))
 
 assembled <- ggarrange(tree.plot,disp.plot, labels=c('a','b'),font.label = list(size = 30, color = "black", face = "bold", family = NULL) )
-#assembled <- assembled +bgcolor('white')
-
+# Assemble and annotate the subplots 
 
 dev.new(height=13.5,width=20,unit='cm') 
+# Generate figure
 assembled
 
->> Sub-sample to the square root of the overall number of species 
-
+# This figure justifies the reconstruction of bird gross appendicular proportion evolution under a Brownian model (ribbon confluent with null), and bats under an Early Burst model (ribbon below the null). 
 
 setwd()
 ggsave(filename='Figure_pheno_02_20_2024_pale.pdf', width = 40,
   height = 27,
   units = c( "cm"),
   dpi = 300)
+# Save figure
+
+# Script concludes 

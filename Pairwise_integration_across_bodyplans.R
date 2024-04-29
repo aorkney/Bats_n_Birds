@@ -29,6 +29,7 @@ for( i in 1:length(GPA.Csize) ){
 # Done
 
 Csize.birds<-GPA.Csize
+# Define an array of skeletal element centroid sizes ('proportions') for birds.
 
 # Define a sundry function to interrogate data objects
 get.item <- function( X , item ) { X[[ item ]] }
@@ -53,7 +54,6 @@ get.residual.Csize <- function( array, masses, phylogeny, taxa ){
 # This function uses phylogenetic Generalised Least Squares to compute the allometrically adjusted centroid sizes of skeletal elements.
 # The user must provide the array of original bird skeletal element centroid sizes, bodymasses, phylogeny and taxa of interest. 
 
-
 allo.Csize.birds <- get.residual.Csize( array = GPA.Csize, masses = masses, phylogeny = pruned.tree, taxa=names(masses) )
 # Compute allometric residuals of centroid sizes. 
 
@@ -63,6 +63,7 @@ names(allo.Csize.birds)[12] <- 'tibia'
 
 masses.birds <- masses
 pruned.tree.birds <- pruned.tree
+# rename the vector of body masses and the phylogenetic object associated with birds, so that they are not later confused with the corresponding objects for the bat dataset. 
 
 # The bird dataset has been loaded. 
 
@@ -124,6 +125,7 @@ sliders[[4]]<-tibia.sliders
 names(sliders) <- elements[-3]
 
 # Sliding landmark indices have been defined. Note that the handwing does not include sliding landmarks
+# Sliding landmarks must be defined, because the original bat landmark constellations have not yet been aligned. 
 
 get.gpa.taxa <- function(landmark.list,sliders,taxa,elements){
 	GPA.results <- list() # Define a dumby list to receive aligned landmark constellations
@@ -145,10 +147,10 @@ taxa <- dimnames(bat.landmarks[['humerus']])[[3]]
 # For now, let's use all the bat species available
 
 GPA.results <- get.gpa.taxa(bat.landmarks,sliders,taxa,elements)
-# The alignemnt has been performed
+# The alignemnt of landmark constellations has been performed
 
 for(i in 1:length(GPA.results)){
-		if(dim(GPA.results[[i]]$coords)[2] <3){ # If a shape constellation is 2D, coerce 
+		if(dim(GPA.results[[i]]$coords)[2] <3){ # If a shape constellation is 2D, coerce it to 3D (0 variance on Z axis)
 			shape.temp<-GPA.results[[i]]$coords # Define a dumby variable that receives the original shape data for that element
 			shape.new<-array(NA, c(dim(shape.temp)[1],3,dim(shape.temp)[3]))
 			for(j in 1:(dim(shape.temp)[3])){
@@ -165,12 +167,12 @@ for(i in 1:length(GPA.results)){
 GPA.coords <- lapply( GPA.results , get.item , item = "coords" )
 GPA.Csize <- lapply( GPA.results , get.item , item = "Csize" )
 # Coordinates and centroid sizes have been extracted
-
+# Skeletal proprtions for the bat dataset have now been defined ('GPA.Csize')
 
 bat.tree <- read.tree('chiroptera.no_outgroups.absolute.tre')
 # Phylogeny sourced from Shi & Rabosky, 2015 for bat relationships
 # This phylogeny far exceeds the number of taxa for which we have landmark constellations
-# we must therefore prune the phylogeny  
+# we must therefore prune the phylogeny:  
 pruned.tree.bats <- keep.tip(bat.tree,taxa)
 
 metadata <- read.csv('Bat_CT_process_list_Andrew_only.csv')
@@ -182,10 +184,10 @@ names(masses.bats) <- taxa
 
 allo.Csize.bats <- get.residual.Csize( array = GPA.Csize, masses = masses.bats, phylogeny = pruned.tree.bats, taxa=names(masses.bats) )
 # Compute the allometric residuals of bat skeletal element centroid sizes. 
-
+# It is important to perform this step, so that allometric changes covariances between skeletal proportions do not overwhelm perceived patterns of evolutionary covariance between species with very different body masses. 
 
 pairs <- combn(elements,2)
-# Define a series of unique pairs of skeletal elements. 
+# Define a series of unique pairs of skeletal elements, so that covariance between them may be explored. 
 
 # We will now explore the strength and significance of evolutionary integration between the allometric residuals of 
 # bird and bat skeletal proportions over their respective phylogenetic trees. 
@@ -209,7 +211,7 @@ for(i in 1:(length(pairs)/2)){
 		rows <- intersect( grep( paste(Csize.int.bats$bone1,Csize.int.bats$bone2), pattern= pairs[1,i] )  , grep( paste(Csize.int.bats$bone1,Csize.int.bats$bone2), pattern= pairs[2,i] ) ) 
 		# Find the relevant row of the data object to fill
 		bat.models[[i]] <- phylo.integration(allo.Csize.bats[pairs[1,i]][[1]][pruned.tree.bats$tip],allo.Csize.bats[pairs[2,i]][[1]][pruned.tree.bats$tip], phy=pruned.tree.bats)
-		# Compute a partial least squared decomposition and Z-score
+		# Compute a partial least squared decomposition and Z-score in a permutation-based framework
 		Csize.int.bats[rows,]$Z <-  bat.models[[i]]$Z/sqrt(length(pruned.tree.bats$tip))
 		Csize.int.bats[rows,]$p <- bat.models[[i]]$P.value
 		# Assign values to data object
@@ -238,6 +240,7 @@ sizedf.birds$Z[which(sizedf.birds$p >0.05)]<-0
 
 diffdf <- as.data.frame(diff.int.animals)
 diffdf$Z[which(diffdf$p >0.05)]<-0
+# Mask non significant evolutionary integration Z-scores in bats.
 
 
 # Define a colour blind friendly palette for plotting
@@ -280,7 +283,7 @@ ggtitle('Bats')
 # Pairwise integration plot across the bat body plan
 
 leg <- cowplot::get_legend(plota)
-# Extract legend (you will need to have cowplot installed)
+# Extract legend (you will need to have cowplot # 1.1.1 installed)
 
 
 plota<-
@@ -322,7 +325,7 @@ ggtitle('Bats')
 
 sizedf.birds2<-sizedf.birds
 sizedf.birds2$Z[which(sizedf.birds$Z=='0')]<-NA
-# Mask non significant results in birds
+# Mask non significant results in birds.
 
 plotb<-
 ggplot(data=sizedf.birds2)+
@@ -369,9 +372,9 @@ elements <- c('humerus','radius','handwing','femur','tibia')
 pairs <- combn(elements,2)
 results.Csize.bats<-matrix(0,1,1)
 results.Csize.birds<-matrix(0,1,1)
-n<-100
+n<-100 # number of subsamples
 	i<-1 
-k<-100
+k<-100 # number of taxa within subsample
 while(dim(results.Csize.bats)[1] < n*length(pairs[1,]) ){
 
 
@@ -396,6 +399,7 @@ while(dim(results.Csize.bats)[1] < n*length(pairs[1,]) ){
 			size.pls <- tryCatch( expr= {phylo.integration(result[pairs[1,j]][[1]][keep.tip(pruned.tree.bats,taxa)$tip],result[pairs[2,j]][[1]][keep.tip(pruned.tree.bats,taxa)$tip], phy=keep.tip(pruned.tree.bats,taxa), print.progress=F)},error=function(err) NA)
 			Csize.int[j,]$Z <-  size.pls$Z[[1]]/(k^.5)
 			Csize.int[j,]$p <- size.pls$P.value[[1]]
+			# Compute pairwise integration statistic in sub-sample, for pair of skeletal element proportions 
 	}
 
 	if(i==1){
@@ -405,16 +409,18 @@ while(dim(results.Csize.bats)[1] < n*length(pairs[1,]) ){
 		results.Csize.bats<-rbind(results.Csize.bats,Csize.int)
 	}
 	
-	rm(Csize.int)
-	rm(result)
+		rm(Csize.int)
+		rm(result)
 	}
+	# Sundry compilation steps
 
 	print( dim(results.Csize.bats)[1]/( n*length(pairs[1,])))
+	# Provide the user with an update on the progress of run completeness
 	
 }
 
 
-
+# The code below repeats the above steps for the bird dataset:
 
 
 i<-1
@@ -477,10 +483,13 @@ module.identity[which(pair.identity=='femur tibia')] <- 'leg'
 homo.identity <- rep('no',length(pair.identity))
 homo.identity[which(pair.identity=='radius tibia' | pair.identity=='humerus femur'  )]<-'yes'
 
+# Compute the pairwise distances between pairs of bones. Define whether pairs of bones belong to the wing, leg, and whether they are serially homologous (such as the humerus and femur).
+
 module.identity[which(homo.identity=='yes')] <- 'serial'
 
 col.pal <-  c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
+# Define a colour palette for plotting
 
 df <- data.frame(cbind(pair.identity,distance.identity,results.Csize.bats))
 df$Z<-as.numeric(df$Z)
@@ -510,8 +519,10 @@ labs(x='topological distance',y=expression(paste( italic('Z/'),sqrt(n) ) ), shap
 	legend.position='top',
 				legend.title=element_text(size=15),
 				legend.text=element_text(size=15))
+# Produce a plot of the structure of evolutionary integration between skeletal proportions across the bat body plan as a function of the distance between bone pairs. 
 
 mod.leg <- cowplot::get_legend(topo.bats)
+# Extract legend.
 
 topo.bats <- ggplot(data=df,aes(x=distance.identity,y=Z,fill=module.identity, shape=module.identity))+
 geom_jitter(size=3,alpha=0.5)+
@@ -539,9 +550,9 @@ labs(x='topological distance',y=expression(paste( italic('Z/'),sqrt(n) ) ), shap
 	legend.position='none',
 				legend.title=element_text(size=15),
 				legend.text=element_text(size=15))
+# Reproduce plot without legend
 
-
-
+# Repeat for birds:
 df <- data.frame(cbind(pair.identity,distance.identity,results.Csize.birds))
 df$Z<-as.numeric(df$Z)
 df$p<-as.numeric(df$p)
@@ -571,13 +582,17 @@ labs(x='topological distance',y=expression(paste( italic('Z/'),sqrt(n) ) ), shap
 				legend.text=element_text(size=15))
 
 
-library(ggpubr)
+library(ggpubr) # 0.6.0
+# Load package for combining subplots
+					     
 left.pane <- ggarrange(plota,plotb,ncol=1,common.legend=T,legend='left', labels=c('a','c'), font.label = list(size = 30, color = "black", face = "bold"))
 
 right.pane <- ggarrange(topo.bats,topo.birds,ncol=1,common.legend=T,legend='bottom', labels=c('b','d'), font.label = list(size = 30, color = "black", face = "bold"))
+# Define combinatorial subplots
 
 
-library(jpeg)
+library(jpeg) # 0.1-10
+# Load package to import jpeg images (we need this for a background graphic, the user seeking to replicate the study results can dispense with this step)
 
 # img <- readJPEG("Figure_2_11_09_2023c_done_cropped.jpg")
 
@@ -596,9 +611,10 @@ blank<-ggplot()+ geom_blank()+
       panel.grid.major=element_blank(),
       panel.grid.minor=element_blank(),
       plot.background=element_blank())
-# Done
+# Produce a blank background
 
 dev.new(width=20,height=15,unit='cm')
+# Make a new figure
 
 plot.with.inset <-
   ggdraw() +
@@ -611,23 +627,16 @@ plot.with.inset <-
   draw_plot(topo.birds, x = 0.67, y = 0.0, width = .32, height = .43)+
 	draw_plot(mod.leg,x=0.7,y=0.38,width=0.2,height=0.3)+
 geom_text(data=data.frame(cbind(x=c(0.04,0.96,0.04,0.96),y=c(0.98,0.98,0.42,0.42))), aes(x=x,y=y), label=c('a','b','c','d'), size = 30/.pt, color = "black", fontface = "bold")
+# Arrange subplots
 
+plot.with.inset 
+# Print plot to screen
 
-plot.with.inset <-
-  ggdraw() +
-  draw_plot(blank) +
-  #draw_image(img,x=0.08,y=0.018,width=0.8,height=.9)+ 
-  draw_plot(plota, x = 0.02, y = 0.33, width = .29, height = 1)+
-  draw_plot(plotb, x = 0.02, y = -0.265, width = .29, height = 1)+
-	draw_plot(leg,x=-0.05,y=0.43,width=0.2,height=0.25)+
-  draw_plot(topo.bats, x = 0.67, y = 0.575, width = .32, height = .43)+
-  draw_plot(topo.birds, x = 0.67, y = 0.0, width = .32, height = .43)+
-	draw_plot(mod.leg,x=0.7,y=0.38,width=0.2,height=0.35)+
-geom_text(data=data.frame(cbind(x=c(0.04,0.96,0.04,0.96),y=c(0.98,0.98,0.42,0.42))), aes(x=x,y=y), label=c('a','b','c','d'), size = 30/.pt, color = "black", fontface = "bold")
-
-
-setwd()
+setwd() # Set location filepathway to save image
 ggsave(filename='lead_figure_02_20_2024.pdf', width = 40,
   height = 30,
   units = c( "cm"),
   dpi = 300)
+# Save image
+
+# Script concludes

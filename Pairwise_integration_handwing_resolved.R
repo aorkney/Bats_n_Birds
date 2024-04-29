@@ -1,5 +1,5 @@
 # The purpose of this script is to
-# import the bat dataset and prepare it
+# import the bat dataset and prepare it for analysis...
 # We will, along with preparing a block of data that represents 
 # overall handwing centroid size, produce a block of data
 # that represents:
@@ -8,11 +8,11 @@
 # 3) Fourth finger length
 # Evolutionary integration will then be computed across pairs of skeletal
 # element relative sizes (corrected for body mass), across the bat body plan, 
-# resolving variation inside the handwing.
+# including major digit lengths within the handwing.
 
-library(geomorph)
-library(ape)
-library(nlme)
+library(geomorph) # 4.0.5
+library(ape) # 5.7-1
+library(nlme) # 3.1-162
 
 setwd()
 # Set the directory to the location of the landmark data
@@ -22,14 +22,15 @@ load('radius_array_nov_08_2023.RData')
 load('handwing_array_nov_08_2023.RData')
 load('femur_array_nov_08_2023.RData')
 load('tibia_array_nov_08_2023.RData')
-# Load the original landmark arrays. These include unevenly spaced sliding curve landmarks
-
+# Load the original bat skeleton landmark arrays. These include unevenly spaced sliding curve landmarks
 
 total.thumb <-matrix(NA, length(dimnames(handwing.array)[[3]]), 1)
 total.thumb <- as.vector(total.thumb)
 names(total.thumb)<-dimnames(handwing.array)[[3]]
+# Make an object to receive thumb length data
 
 total.fourth.finger <- total.second.finger <- total.thumb
+# The fourth and second fingers (digits V and III) will have the same dimensionality as thumb length
 
 for( i in 1:length(dimnames(handwing.array)[[3]]
 )){
@@ -37,6 +38,7 @@ for( i in 1:length(dimnames(handwing.array)[[3]]
 	total.second.finger[i] <- handwing.array[,,i][12,2]
 	total.fourth.finger[i] <- handwing.array[,,i][18,2]
 }
+# Populate the digit length objects
 
 bat.landmarks<-list()
 
@@ -45,10 +47,10 @@ bat.landmarks[[2]] <- radius.array
 bat.landmarks[[3]] <- handwing.array
 bat.landmarks[[4]] <- femur.array
 bat.landmarks[[5]] <- tibia.array
-
+# Compile the bat landmark data into a list
 
 names(bat.landmarks) <- elements <- c('humerus','radius','handwing','femur','tibia')
-# Compile the landmark data into a list
+# name the list elements
 
 humerus.sliders <- rbind( define.sliders(c(3, 20:24,9), write.file=F),
 define.sliders( c(6,25:31, 8), write.file=F),
@@ -86,7 +88,6 @@ sliders[[3]]<-femur.sliders
 sliders[[4]]<-tibia.sliders
 names(sliders) <- elements[-3]
 
-
 # Sliding landmark indices have been defined. Note that the handwing does not include sliding landmarks
 
 get.gpa.taxa <- function(landmark.list,sliders,taxa,elements){
@@ -120,14 +121,15 @@ get.item <- function( X , item ) { X[[ item ]] }
 GPA.coords <- lapply( GPA.results , get.item , item = "coords" )
 GPA.Csize <- lapply( GPA.results , get.item , item = "Csize" )
 # Coordinates and centroid sizes have been extrated
+# Centroid sizes, which proxy skeletal element volumes (equivalent to 'proportions' for long, thin bones), are stored in 'GPA.Csize' and will be the subject of analysis
 
 GPA.Csize[[6]] <- total.thumb
 GPA.Csize[[7]] <- total.second.finger
 GPA.Csize[[8]] <- total.fourth.finger
+# Add the digit length data to the list of landmark data
 
 names(GPA.Csize)[c(6,7,8)] <- c('thumb','second.finger','fourth.finger')
-
-
+# Name the new elements approrpriately
 
 setwd()
 # Set work directory to the location of the phylogeny by Shi and Rabosky 
@@ -137,22 +139,25 @@ bat.tree <- read.tree('chiroptera.no_outgroups.absolute.tre')
 # we must therefore prune the phylogeny  
 
 pruned.tree.bats <- keep.tip(bat.tree,taxa)
+# Pruned phylogeny produced
 
-setwd()
 metadata <- read.csv('Bat_CT_process_list_Andrew_only.csv')
+# Read bat metadata
 
 masses.bats <- metadata$Mass[ match(taxa,metadata$Shi_match) ]
 names(masses.bats)<-taxa
-
-family <- metadata$Family[match(taxa,metadata$Shi)]
-
-
+# Define a vector of bat body masses
 
 # Define a sundry function to interrogate data objects
 get.item <- function( X , item ) { X[[ item ]] }
 # This is a simple indexing function
 
-library(phytools)
+# The next steps in the code will entail removing covariance between skeletal element proportions that is induced by size-scaling (allometry). 
+# The bats in the dataset range over a factor of 1000 in body size, which means that it is necessary to remove this signal so that evolutionary relationships
+# that transcend differences between very small and very large bats can be perceived. 
+
+library(phytools) # 1.5-1
+# The phytools package contains functions with allow us to initiate our estimate of phylogenetic structure of skeletal element sizes
 
 get.residual.Csize <- function( array, masses, phylogeny, taxa ){
 	species<-taxa
@@ -173,48 +178,55 @@ get.residual.Csize <- function( array, masses, phylogeny, taxa ){
 # This function uses phylogenetic Generalised Least Squares to compute the allometrically adjusted centroid sizes of skeletal elements.
 # The user must provide the array of original bird skeletal element centroid sizes, bodymasses, phylogeny and taxa of interest. 
 
-
-pruned.tree.bats <- keep.tip(pruned.tree.bats, taxa)
-
 allo.Csize.bats <- get.residual.Csize( array = GPA.Csize, masses = masses.bats, phylogeny = pruned.tree.bats, taxa=taxa )
 # Which taxa do we wish to investigate? 
 # In this example, we will investigate all birds. 
 
 elements <- c('humerus','radius','thumb','second.finger','fourth.finger','femur','tibia')
+# A vector the skeletal elements that will be studied. 
 
 pairs <- combn(elements,2)
 # Define a series of unique pairs
 
-
 Csize.int.bats <- cbind(expand.grid(elements,elements), rep(NA,length(elements)^2),rep(NA,length(elements)^2) )
 colnames(Csize.int.bats)<-c('bone1','bone2','Z','p')
+# Prepare an object to receive estimates of evolutionary covariance strength between different skeletal element proportion pairs across the bat body plan. 
+# A permutation-based Z-score effect size and p-value will be extracted from a phylogenetic 2-Block Partial Least Squares approach. 
 
-
-for(i in 1:(length(pairs)/2)){
+for(i in 1:(length(pairs)/2)){ # For each unique pair of skeletal elements
 		rows <- intersect( grep( paste(Csize.int.bats$bone1,Csize.int.bats$bone2), pattern= pairs[1,i] )  , grep( paste(Csize.int.bats$bone1,Csize.int.bats$bone2), pattern= pairs[2,i] ) ) 
+		# Find the rows in the results object that match the skeletal pair
 		size.pls <- phylo.integration(allo.Csize.bats[pairs[1,i]][[1]][pruned.tree.bats$tip],allo.Csize.bats[pairs[2,i]][[1]][pruned.tree.bats$tip], phy=pruned.tree.bats)
+		# Compute 2-Block Partial Least Squares analysis 
 		Csize.int.bats[rows,]$Z <-  size.pls$Z/sqrt(length(pruned.tree.bats$tip))
 		Csize.int.bats[rows,]$p <- size.pls$P.value
+		# Extract summary statistics
 }
 
+
+# The following analyses are not integral to the manuscript but may interest the user seeking to replicate the study:
+# The 'compare.pls' function determines whether differences between estimated evolutionary covariances are significant. 
 
 compare.pls(phylo.integration(allo.Csize.bats['second.finger'][[1]][pruned.tree.bats$tip],allo.Csize.bats['fourth.finger'][[1]][pruned.tree.bats$tip], phy=pruned.tree.bats),
 phylo.integration(allo.Csize.bats['femur'][[1]][pruned.tree.bats$tip],allo.Csize.bats['thumb'][[1]][pruned.tree.bats$tip], phy=pruned.tree.bats)
 )
+# Comparing integration between the bat finger proportions, to integration between the bat femur and thumb proportions.
 
 compare.pls(phylo.integration(allo.Csize.bats['second.finger'][[1]][pruned.tree.bats$tip],allo.Csize.bats['thumb'][[1]][pruned.tree.bats$tip], phy=pruned.tree.bats),
 phylo.integration(allo.Csize.bats['femur'][[1]][pruned.tree.bats$tip],allo.Csize.bats['thumb'][[1]][pruned.tree.bats$tip], phy=pruned.tree.bats)
 )
+# Compairng integration between the bat thumb and finger proportions, to integration between the bat femur and thumb proportions. 
 
 # The thumb is significantly less integrated to the femur than it is to the second finger, and the fingers are significantly more integrated to each other
-# than the 
+# than the thumb is to the femur. 
 
 
-library(ggplot2)
+# The results may now be plotted:
+
+library(ggplot2) # 3.4.2
 sizedf.bats <- as.data.frame(Csize.int.bats)
 sizedf.bats$Z[which(sizedf.bats$p >0.05)]<-0
-
-#library(viridis)
+# Compile data frame for plotting and mask non-significant evolutionary covariance results. 
 
 # Define a colour blind friendly palette for plotting
 cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
@@ -228,8 +240,9 @@ sizedf.bats[,2][which(sizedf.bats[,2]=='second.finger')] <- 'digit III'
 
 sizedf.bats[,1][which(sizedf.bats[,1]=='fourth.finger')] <- 'digit V'
 sizedf.bats[,2][which(sizedf.bats[,2]=='fourth.finger')] <- 'digit V'
+# Housekeeping
 
-
+# This will produce a pairwise covariance plot 'Battenberg plot' depicting the strength of evolutionary covariances between pairs of skeletal proportions across the bat appendicular skeleton. 
 plota<-
 ggplot(data=sizedf.bats)+
 coord_equal(ratio = 1)+
@@ -262,12 +275,16 @@ annotate('rect',colour='black',fill=NA,xmin=0.5,xmax=5.5,ymin=2.5,ymax=7.5,linew
 annotate('rect',colour=cbbPalette[6],fill=NA,xmin=0.5,xmax=5.5,ymin=2.5,ymax=7.5,linewidth=2)
 
 
+# The following lines will re-compute the above analysis within a re-sampled framework, to produce an impression of the range of confidence intervals. 
+# Results will be plotted as a function of the gross distance between different pairs of skeletal elements. 
+
 sizedf.bats <- as.data.frame(Csize.int.bats)
+# Prepare data object to receive results. 
 
 results.Csize<-matrix(0,1,1)
-n<-100
+n<-100 # Number of replicates
 	i<-1 
-k<-100
+k<-100 # Number of taxa within any single sub-sample
 
 while(dim(results.Csize)[1] < n*length(pairs[1,]) ){
 
@@ -276,13 +293,12 @@ while(dim(results.Csize)[1] < n*length(pairs[1,]) ){
 	# sub-sample of bat diversity 
 
 	tryCatch( expr= {result <- get.residual.Csize( array = GPA.Csize, masses = masses.bats, phylogeny = keep.tip(pruned.tree.bats,taxa), taxa=taxa )}, error=function(err) NA)
-	
+	# Compute the allometric residuals 
 
 	if(exists('result')){
 
 	pairs <- combn(elements,2)
 	# Define a series of unique pairs
-
 
 	Csize.int<-cbind(pairs[1,],pairs[2,],rep(NA,length(pairs[1,])),rep(NA,length(pairs[1,])))
 	Csize.int<-data.frame(Csize.int)
@@ -291,8 +307,10 @@ while(dim(results.Csize)[1] < n*length(pairs[1,]) ){
 	for(j in 1:(length(pairs)/2)){
 			# False convergence errors can occur, so we need tow rap this in an error condition statement 
 			size.pls <- tryCatch( expr= {phylo.integration(result[pairs[1,j]][[1]][keep.tip(pruned.tree.bats,taxa)$tip],result[pairs[2,j]][[1]][keep.tip(pruned.tree.bats,taxa)$tip], phy=keep.tip(pruned.tree.bats,taxa), print.progress=F)},error=function(err) NA)
+			# Compute the evolutionary covariance between the selected pair of skeletal element residual sizes, under a 2-Block Partial Least Squares approach
 			Csize.int[j,]$Z <-  size.pls$Z[[1]]/(k^.5)
 			Csize.int[j,]$p <- size.pls$P.value[[1]]
+			# Extract summary statistics
 	}
 
 	if(i==1){
@@ -305,9 +323,11 @@ while(dim(results.Csize)[1] < n*length(pairs[1,]) ){
 	rm(Csize.int)
 	rm(result)
 	}
+	#Sundry housekeeping steps
 
-	# This while loop runs forever. 
+	# This while loop will run until the number of desired replicates has completed. 
 	print( dim(results.Csize)[1]/( n*length(pairs[1,])))
+	# Update the user on progress.
 	
 }
 
@@ -320,19 +340,14 @@ distance.identity[which(pair.identity=='humerus handwing' | pair.identity=='hume
 distance.identity[which(pair.identity=='humerus tibia' | pair.identity=='radius femur' )] <-3
 distance.identity[which(pair.identity=='radius tibia' | pair.identity=='handwing femur' | pair.identity=='thumb femur' | pair.identity=='second.finger femur' | pair.identity=='fourth.finger femur') ] <-4
 distance.identity[which(pair.identity=='handwing tibia' | pair.identity=='thumb tibia' | pair.identity=='second.finger tibia' | pair.identity=='fourth.finger tibia') ] <-5
-
-
-#module.identity <- rep('cross',length(pair.identity))
-#module.identity[which(pair.identity== 'humerus radius' | pair.identity=='radius handwing' | pair.identity=='humerus handwing' | pair.identity=='second.finger fourth.finger' | pair.identity=='thumb second.finger' | pair.identity=='thumb fourth.finger' | pair.identity=='radius fourth.finger'  | pair.identity=='radius thumb'  | pair.identity=='radius second.finger')] <- 'wing'
-#module.identity[which(pair.identity=='femur tibia')] <- 'leg'
-#homo.identity <- rep('no',length(pair.identity))
-#homo.identity[which(pair.identity=='radius tibia' | pair.identity=='humerus femur'  )]<-'yes'
+# Define the distances between pairs of skeletal elements. 
 
 module.identity <- rep('other',length(pair.identity))
 module.identity[grep('thumb',pair.identity)] <- 'thumb'
+# Define which pairs of skeletal elements include the thumb. 
 
 col.pal <-  c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
-
+# Define a colour palette for plotting. 
 
 df <- data.frame(cbind(pair.identity,distance.identity,results.Csize))
 df$Z<-as.numeric(df$Z)
@@ -359,12 +374,21 @@ labs(x='topological distance',y=expression(paste( italic('Z/'),sqrt(n) ) ), shap
 	legend.position='bottom',
 				legend.title=element_text(size=15),
 				legend.text=element_text(size=15))
+# Produce a scatter plot of the results. 
 
-library(ggpubr)
+library(ggpubr) # 0.6.0
+# Package for arranging subplots
+					     
 dev.new(width=25,height=15,unit='cm')
+# Make new image
 ggarrange(plota, topo.bats, ncol=2,labels=c('a','b'), font.label = list(size = 30, color = "black", face = "bold"), hjust=c(-3,3), widths=c(1,0.8))
+# Arrange subplots
 setwd()
+# Specify directory to save figure
 ggsave(filename='Figure_3_03_26_2024.pdf', width = 30,
   height = 18,
   units = c( "cm"),
   dpi = 300)
+# Save figure
+
+# Script concludes

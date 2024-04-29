@@ -57,6 +57,9 @@ tibia_array_nov_08_2023.RData
 These objects are landmark constellations representing bat skeletal forms, designed and placed by Orkney between 2022 and 2023, 
 employed under the Hedrick Lab and leveraging datasets and assets from multiple museums, with extensive support from Boerma.
 
+chiroptera.no_outgroups.absolute.tre 
+Bat phylogeny derived from (shi & Rabosky, 2015; https://doi.org/10.1111/evo.12681) This phylogeny is not provided in this GitHub repository.
+
 Fig 1: Pairwise_integration_across_bodyplans.R
 This figure produces plots that map the pairwise evolutionary covariances between the volumes/centroid sizes (this can be referred to as 'proportions' for brevity) of bones across
 bat and bird phylogeny. 

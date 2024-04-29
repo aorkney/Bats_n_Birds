@@ -288,7 +288,6 @@ for(j in 1: length(anatomy)){
 }
 
 # p.total demonstrates that the gross proportions of the bat wing are consistently significantly associated to all ecological categories. 
-# Gross wing proportions are the only variable associated to diet
 # Gross wing proportions and handwing proportions are both strongly associated with flight style
 # Gross wing proportions, femur and tibia size and the size of the handwing are all significantly associated to roosting style variety. 
 
@@ -397,8 +396,8 @@ colnames(melt.z.foot)[4]<-'eco'
 
 # Produce curated data objects representing the strength and significance of bat anatomical adaptation to flight and roosting style variety. 
 
-melt.z <- rbind(melt.z.diet,melt.z.flight,melt.z.foot)
-melt.p <- rbind(melt.p.diet,melt.p.flight,melt.p.foot)
+melt.z <- rbind(melt.z.flight,melt.z.foot)
+melt.p <- rbind(melt.p.flight,melt.p.foot)
 
 colour <- rep('black',length(melt.z$value))
 colour[which(melt.p$value >0.05)] <- 'NA'
@@ -452,7 +451,7 @@ s<-1
 p<-1
 
 max.y<-1.6
-sig <- quantile ( (n+(melt.z[-which(melt.z$eco=='diet'),]$value^p *s)[which( melt.z[-which(melt.z$eco=='diet'),]$colour=='black') ]), 0.05)
+sig <- quantile ( (n+(melt.z[-which(melt.z$eco=='flight'),]$value^p *s)[which( melt.z[-which(melt.z$eco=='flight'),]$colour=='black') ]), 0.05)
 
 library(geomtextpath) # 0.1.1
 # Facilitates curved text in ggplots
@@ -694,7 +693,7 @@ foot.pcoa <- cmdscale(foot.dist, eig=T)
 k<-max(which(foot.pcoa$eig/sum(foot.pcoa$eig)>=0.05))
 foot.pcoa <- cmdscale( foot.dist, k=k  ,eig = T)
 
-pcoas <- list(diet.pcoa,flight.pcoa,foot.pcoa)
+pcoas <- list(flight.pcoa,foot.pcoa)
 names(pcoas)<-ecology
 
 i<-1
@@ -715,7 +714,6 @@ for(j in 1: length(anatomy)){
 }
 
 # p.total demonstrates that the gross proportions of the bat wing are consistently significantly associated to all ecological categories. 
-# The femur size, tibia size, carpometacarpus size are all associated to diet
 # The carpometacarpus size is relevant to flight style, as is the femur and the carpometacarpus shape 
 # The femur size and tibia size are relevant to foot-use ecology 
 
@@ -821,8 +819,8 @@ melt.p.foot <- melt(results.p[[3]])
 melt.z.foot <- cbind(melt.z.foot,rep('foot',dim(melt.z.foot)[1]))
 colnames(melt.z.foot)[4]<-'eco'
 
-melt.z <- rbind(melt.z.diet,melt.z.flight,melt.z.foot)
-melt.p <- rbind(melt.p.diet,melt.p.flight,melt.p.foot)
+melt.z <- rbind(melt.z.flight,melt.z.foot)
+melt.p <- rbind(melt.p.flight,melt.p.foot)
 
 colour <- rep('black',length(melt.z$value))
 colour[which(melt.p$value >0.05)] <- 'NA'

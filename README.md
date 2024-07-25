@@ -1,6 +1,9 @@
 # Bats_n_Birds
 
-Code repository for Orkney, Boerma and Hedrick 2024, run in R version 4.2.3 This repository contains commented codes to enable readers to reproduce the analyses conducted in Orkney and Hedrick, 2024.
+''evolutionary integration of fore- and hindlimb proportions within the bat wing membrane inhibits ecological adaptation compared to birds.''
+Orkney, Boerma, Hedrick, (2024)
+
+Code repository for Orkney, Boerma and Hedrick 2024, run in R version 4.2.3 This repository contains commented codes to enable readers to reproduce the analyses conducted in Orkney, Boerma and Hedrick, 2024.
 
 These scripts were run on a machine with the following specifications: Machine specs: 12th Gen Intel(R) Core(TM) i9-12900K 3.20 GHz 128 GB (128 GB usable) 64-bit operating system, x64-based processor
 
@@ -8,8 +11,7 @@ However, no non-standard hardware is required to reproduce the analyses here.
 
 Installation guide: See https://www.r-project.org/ for guidance installing and using R, including expected installation times and the installation of dependant packages.
 
-''evolutionary integration of fore- and hindlimb proportions within the bat wing membrane inhibits ecological adaptation compared to birds.''
-Orkney, Boerma, Hedrick, (2024)
+
 
 Data: 
 

@@ -1,124 +1,124 @@
-[[1]] "Humerus_Deepest_recession_lateral_condyle"
+[1] "Humerus_Deepest_recession_lateral_condyle"
 
 >> The deepest point of the central recession on the distal lateral condyle of the humerus
 This could conservatively be considered a type 2 landmark under Bookstein's topology, because it is a local minimum
 and not a suture, but it represents the site of attachment for lateral muscles of wrist and digit extension 
 
-[[2]] "Humerus_Posterior_synthesis_lateral_condyle_diaphysis"
+[2] "Humerus_Posterior_synthesis_lateral_condyle_diaphysis"
 
 >> The point of inflection where the lateral condyle fuses of the distal humerus fuses with the caudal aspect of the 
 diaphysis. 
 This is a local gradient change and therefore represents a type 2 landmark under Bookstein's topology
 
-[[3]] "Humerus_Posterior_proximal_position_lateral_condyle"
+[3] "Humerus_Posterior_proximal_position_lateral_condyle"
 
 >> The lateral condyle of the distal humerus forms a lip that pinches together in a horse-shoe shape. This represents the termination of the caudal 
 arm of the horseshoe. 
 This is a local osteological feature conservatively considered a type 2 landmark. 
 
-[[4]] "Humerus_Anterior_synthesis_lateral_condyle_diaphysis_capitulum"
+[4] "Humerus_Anterior_synthesis_lateral_condyle_diaphysis_capitulum"
 
 >> The lateral condyle of the distal humerus and the capitulum of the distal humerus meet at a local minimum. 
 It is likely this represents the point of fusion of distinct ossification centres in the distal humeral 
 epiphysis, and could therefore be considered type 1. 
 
-[[5]] "Humerus_Proximal_point_supratrochlear_fossa"
+[5] "Humerus_Proximal_point_supratrochlear_fossa"
 
 >> Rarely if ever perforate, this feature represents the proximal most point of the articular capsule with the ulna, 
 and is therefore a type 1 landmark describing a tissue juncture. 
 
-[[6]] "Humerus_Synthesis_supratrochlear_fossa_trochlea"
+[6] "Humerus_Synthesis_supratrochlear_fossa_trochlea"
 
 >> The medial lip of the supratrochlear fossa meets the medial aspect of the trochlea at this point. 
 Conservatively type 2, but a case for type 1 could be made if this is the fusion zone of distinct ossification centres. 
 Represents the transition to the trochlear surface with the ulna. 
 
-[[7]] "Humerus_Prominence_spina_entepicondyli"
+[7] "Humerus_Prominence_spina_entepicondyli"
 
 >> The medial epicondyle of the humerus of bats often projects to form an elaborate structure, which presumably serves
 as a point of attachment for the medial suite of wrist and digit extension muscles. 
 This structure is variable and I therefore marked its distal most point; it should be considered type 3. 
 
-[[8]] "Humerus_Posterior_synthesis_trochlea_diaphsysis"
+[8] "Humerus_Posterior_synthesis_trochlea_diaphsysis"
 
 >> The caudal aspect of the distal humerus where the trochlea surface with the ulna fuses to the diaphysis, 
 likely represents an ossification centre fusion. Defensibly type 1, conservatively type 2. 
 
-[[9]] "Humerus_Anteriorproximal_prominence_lateral_condyle" 
+[9] "Humerus_Anteriorproximal_prominence_lateral_condyle" 
 
 >> The opposite side to the horseshoe formed with Humerus_Posterior_proximal_position_lateral_condyle,
 type 2 landmark. 
 
-[[10]] "Humerus_Tuberculum_minus" 
+[10] "Humerus_Tuberculum_minus" 
 
 >> The lesser tubercle of the lateral aspect of the proximal humerus, likely serves as attachment for subscapularis, 
 ergo tissue juncture so type 1 classification. 
 
-[[11]] "Humerus_Synthesis_medial_crest_diaphysis" 
+[11] "Humerus_Synthesis_medial_crest_diaphysis" 
 
 >> The point of inflection between the diaphysis and the medial supracondylar crest. 
 Often difficult to identify, so should be considered a type 2 landmark. 
 
-[[12]] "Humerus_Deepest_recession_proximal_head" 
+[12] "Humerus_Deepest_recession_proximal_head" 
 
 >> The deepest point of the articular capsule, facing proximally and perpendicular to the glenoid. 
 Local minimum, ergo type 2, may represent the midpoint for proximal epiphyseal ossification centres. 
 
-[[13]] "Humerus_Proximal_end_medial_pectoral_ridge" 
+[13] "Humerus_Proximal_end_medial_pectoral_ridge" 
 
 >> One proximal point which begins the deltopectoral crest, which is usually a broad crest with two distinct edges in bats,
 fusing at their distal extension before meeting the diaphysis. This landmark denotes the medial edge of this feature and is a type 1 landmark defined by the juncture of the 
 deltoideus, pectoral musculature and humerus.
 
-[[14]] "Humerus_Proximal_end_lateral_pectoral_ridge" 
+[14] "Humerus_Proximal_end_lateral_pectoral_ridge" 
 
 >> The second proximal point which begins the deltopectoral crest. This landmark denotes the lateral edge of this feature and is a type 1 landmark defined by the juncture of the 
 deltoideus, pectoral musculature and humerus.
 
-[[15]] "Humerus_Distal_end_lateral_pectoral_ridge" 
+[15] "Humerus_Distal_end_lateral_pectoral_ridge" 
 
 >> Distal termination of the deltopectoral crest. Type 1.
 
-[[16]] "Humerus_Proximal_recession_tuberculum_majus" 
+[16] "Humerus_Proximal_recession_tuberculum_majus" 
 
 >> A local recession on the proximally facing aspect of the greater tubercle; type 2. 
 
-[[17]] "Humerus_Lateral_recession_tuberculum_majus" 
+[17] "Humerus_Lateral_recession_tuberculum_majus" 
 
 >> A local recession on the laterally facing aspect of the greater tubercle; type 2. 
 
-[[18]] "Humerus_Distalmost_sulcus_head_tuberculum_minus" 
+[18] "Humerus_Distalmost_sulcus_head_tuberculum_minus" 
 
 >> The point where the lesser tubercle of the humerus meets the neck of the glenoid, which are essentially confluent with the glenoid in bats.
 Type 2, arguably type 1 because I suspect these features originate from distinct ossification centres. 
 
-[[19]] "Humerus_Distalmost_sulcus_head_tuberculum_majus" 
+[19] "Humerus_Distalmost_sulcus_head_tuberculum_majus" 
 
 >> The point where the greater tubercle of the humerus meets the neck of the glenoid, which are essentially confluent with the glenoid in bats.
 Type 2, arguably type 1 because I suspect these features originate from distinct ossification centres. 
 
-[[20]] "Humerus_Curve_lateral_condyle" 
+[20] "Humerus_Curve_lateral_condyle" 
 
 >> Semilandmark curve forming a horseshoe between Humerus_Anteriorproximal_prominence_lateral_condyle and Humerus_Posterior_proximal_position_lateral_condyle
 
-[[21]] "Humerus_Curve_trochlea"      
+[21] "Humerus_Curve_trochlea"      
 
 >> Semilandmark curve between Humerus_Synthesis_supratrochlear_fossa_trochlea and Humerus_Posterior_synthesis_trochlea_diaphsysis, tracing the prominent crest of the trochlear surface of the 
 articulation withb the ulna. 
                                 
-[[22]] "Humerus_Curve_medial_pectoral_ridge" 
+[22] "Humerus_Curve_medial_pectoral_ridge" 
 
 >> Semilandmark curve between Humerus_Proximal_end_medial_pectoral_ridge and Humerus_Distal_end_lateral_pectoral_ridge, tracing the medial aspect of the deltopectoral muscle attachment crest. 
                          
-[[23]] "Humerus_Curve_lateral_pectoral_ridge" 
+[23] "Humerus_Curve_lateral_pectoral_ridge" 
 
 >> Semilandmark curve between Humerus_Proximal_end_medial_pectoral_ridge and Humerus_Distal_end_lateral_pectoral_ridge, tracing the medial aspect of the deltopectoral muscle attachment crest. 
                        
-[[24]] "Humerus_Curve_medial_crest" 
+[24] "Humerus_Curve_medial_crest" 
 
 >> Semilandmark curve between Humerus_Tuberculum_minus and Humerus_Synthesis_medial_crest_diaphysis, tracing the attachment surface of the teres major  
                                 
-[[25]] "Humerus_Curve_ridge_humeral_head" 
+[25] "Humerus_Curve_ridge_humeral_head" 
 
 >> Semilandmark curve extending between Humerus_Distalmost_sulcus_head_tuberculum_minus and Humerus_Distalmost_sulcus_head_tuberculum_majus, 
 following the neck of the humerus inferior to the lip of the glenoid.  

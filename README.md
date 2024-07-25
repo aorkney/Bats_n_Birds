@@ -97,7 +97,7 @@ This figure maps the strength of evolutionary covariance between skeletal propor
 in order to explore whether there is a coincidence of evolutionary modules in the bird and bat skeletons with the skeletal regions that exhibit the strongest adaptive responses to distinct
 ecological activities. 
 
-Fig 4: Phenogram_pale_core.R (Run time on aforementioned machine specifications is)
+Fig 4: Phenogram_pale_core.R (Run time on aforementioned machine specifications is 1 minute)
 This figure produces an ancestral state reconstruction of the gross proportions of the appendicular skeleton of birds and bats, and computes indices of the accumulation of phenotypic disparity through time. 
 This contributes to discussion, which explores whether differences in evolutionary modules and regionalised ecological adaptation in the bird and bat skeleton may have influenced their gross evolutionary dynamics. 
 

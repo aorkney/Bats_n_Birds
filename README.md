@@ -102,3 +102,24 @@ This figure produces an ancestral state reconstruction of the gross proportions 
 This contributes to discussion, which explores whether differences in evolutionary modules and regionalised ecological adaptation in the bird and bat skeleton may have influenced their gross evolutionary dynamics. 
 
 The aesthetic appearance of plots may differ slightly to the publication versions. 
+
+
+Supporting materials:
+
+Annotated llustrations of bat humerus, radius, femur and tibia landmark constellations employed to proxy bone sizes:
+
+Humerus_scheme_07_22_2024.png
+Radius_scheme_07_22_2024.png
+Femur_scheme_07_22_2024.png
+Tibia_scheme_07_22_2024.png
+
+Supporting landmark descriptions, with numbers matching annotated images:
+
+Humerus_landmark_descriptions_20_07_2024.txt
+Radius_landmark_descriptions_21_07_2024.txt
+Femur_landmark_descriptions_21_07_2024.txt
+Tibia_landmark_descriptions_21_07_2024.txt
+
+
+
+

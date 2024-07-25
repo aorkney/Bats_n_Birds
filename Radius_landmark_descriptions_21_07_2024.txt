@@ -1,0 +1,109 @@
+[1] "Radius_Facet_humerus_capitulum"
+
+>> The landmark at the deepest recession of the proximal joint capsule of the radius, recieving the capitulum of the humerus. 
+Type 2 landmark by Bookstein's topology because it is a local minimum. 
+
+[2] "Radius_Caudal_apex_facet_humerus"
+
+>> The apex of a caudally projecting lip around the proximal articular surface of the radius, confluent with the surface
+receiving the humeral capitulum. Type 2 landmark, potentially type 1 because this may be a suture of multiple ossification centres
+within the proximal epiphyseal radius.     
+            
+[3] "Radius_biceps_tendon_apex"
+
+>> The synthesis between the lip definign the capitulum with the humerus, diaposed to the Radius_Caudal_apex_facet_humerus. Type 2
+                      
+[4] "Radius_Cranial_synthesis_facet_capitulum_lateral"
+
+>> The cranial synthesis between the capitulum surface and a ridge defining a laterally projecting lip of the proximal radius towards its common articulation with the
+humerus and ulna. Type 1 landmark under Bookstein's topology because it is an articulation zone where multiple bones meet. 
+
+[5] "Radius_Apex_flange_biceps_groove"    
+
+>> Synthesis between an ear-shaped groove receiving the insertion of the biceps at the proximal radius and the lip of articular surface of with the capitulum. 
+Type 1
+          
+[6] "Radius_Facet_humerus_lateral_apex"
+
+>> The most distally projecting point of the proximal facet lateral to the capitular surface. Type 3
+
+[7] "Radius_Synthesis_biceps_diaphysis"
+
+>> The synthesis between the ear-shaped attachment of the biceps to the lateral proximal radius and the diaphysis of the radius. Type 1
+              
+[8] "Radius_Distal_extensor_ridge_1" 
+
+>> Local prominence at the medio-cranial aspect of the distal radial epiphysis; must reflect passage of distally extending tendon to the digits. Type 2. 
+
+[9] "Radius_Distal_extensor_ridge_2"
+
+>> Local prominence at cranial aspect of the distal radial epiphysis second from medial; must reflect passage of distally extending tendon to the digits. Type 2. 
+
+[10] "Radius_Distal_extensor_ridge_3"
+
+>> Local prominence at cranial aspect of the distal radial epiphysis second from lateral; must reflect passage of distally extending tendon to the digits. Type 2. 
+
+[11] "Radius_Distal_extensor_ridge_4"
+
+>> Local prominence at latero-cranial aspect of the distal radial epiphysis; must reflect passage of distally extending tendon to the digits. Type 2. 
+              
+[12] "Radius_Distal_dorsal_lateral_projection"  
+
+>> Local prominence projecting from lateral surface of distal radius epiphysis, unknown nature. Type 2.
+    
+[13] "Radius_Distal_ventral_lateral_projection"
+
+>> Local prominence, quite variable, of ventrally projecting distal articular surface with capral bones. Articular zone between two tissues, 
+ambiguous whether Type 1 or 2. 
+   
+[14] "Radius_Distal_ventral_projection"
+Most ventral distal projection of articular surface of radius with carpal bones; Type 3. 
+              
+[15] "Radius_Proximal_Distal_extensor_ridge_1"
+
+>> Local prominence just proximal of Radius_Distal_extensor_ridge_1, Type 2. 
+
+[16] "Radius_Proximal_Distal_extensor_ridge_2"
+
+>> Local prominence just proximal of Radius_Distal_extensor_ridge_2, Type 2. 
+
+[17] "Radius_Proximal_Distal_extensor_ridge_3"
+
+>> Local prominence just proximal of Radius_Distal_extensor_ridge_3, Type 2. 
+
+[18] "Radius_Proximal_Distal_extensor_ridge_4"
+
+>> Local prominence just proximal of Radius_Distal_extensor_ridge_4, Type 2. 
+      
+[19] "Radius_Curve_cranial_caudal_facet_capitulum"
+
+>> Semilandmark curve extending along the ridge between the facet receiving the humeral capitiulum and the laterally projecting lip of the proximal radius to the ulna. 
+Starts at Radius_Caudal_apex_facet_humerus and ends at Radius_Cranial_synthesis_facet_capitulum_lateral 
+   
+[20] "Radius_Curve_cranial_facet_biceps_tendon"
+
+>> Semilandmark curve extending along the proximal lip of the radius capitular facet, from Radius_Cranial_synthesis_facet_capitulum_lateral to Radius_biceps_tendon_apex
+        
+[21] "Radius_Curve_biceps_biceps"
+
+>> Semilandmark curve extending along the proximal lip of the radius capitular facet, from Radius_biceps_tendon_apex to Radius_Apex_flange_biceps_groove
+                     
+[22] "Radius_Curve_biceps_caudal"
+
+>> Semilandmark curve extending along the proximal lip of the radius capitular facet, from Radius_Apex_flange_biceps_groove to Radius_Caudal_apex_facet_humerus
+                   
+[23] "Radius_Curve_humerus_lateral"
+
+>> Semilandmark curve extending along the lateral projection of the proximal radius, from Radius_Caudal_apex_facet_humerus to Radius_Facet_humerus_lateral_apex
+
+[24] "Radius_Curve_lateral_apex_cranial"
+
+>> Semilandmark curve extending along the lateral projection of the proximal radius, from Radius_Facet_humerus_lateral_apex to Radius_Cranial_synthesis_facet_capitulum_lateral
+
+[25] "Radius_Curve_biceps_attachment"  
+
+>> Semilandmark curve along ear shaped attachment zone of biceps at proximal medial radius, running between Radius_Apex_flange_biceps_groove and Radius_Synthesis_biceps_diaphysis 
+                 
+[26] "Radius_Curve_diaphysis"
+
+>> Semilandmark curve running from Radius_Synthesis_biceps_diaphysis along ridge between antebrachial musculature scar, to Radius_Proximal_Distal_extensor_ridge_1

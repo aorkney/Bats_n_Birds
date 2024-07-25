@@ -1,0 +1,33 @@
+[1] "Tibia_Proximal_tuberosity"    
+
+>> This is the patella-aligned proximal tuberosity of the tibia, facing caudally in bats but cranially in other mammals. Type 2. 
+          
+[2] "Tibia_Medial_condyle"
+
+>> This is the medially facing condyle of the proximal tibia surface articulating the femur, faces medially in bats but laterally in other mammals. Type 2. 
+                    
+[3] "Tibia_Lateral_condyle"  
+
+>> This is the laterally facing condyle of the proximal tibia surface articulating the femur, faces laterally in bats but medially in other mammals. Type 2. 
+                 
+[4] "Tibia_Distal_align_tuberosity"   
+
+>> Distal most point of the Tibia, aligned with ridge extending down the diaphysis towards the patella. Type 3. 
+        
+[5] "Tibia_Curve_tuberosity_medial"    
+
+>> Semilandmark curve around proximal articulation with femur between Tibia_Proximal_tuberosity and Tibia_Medial_condyle
+       
+[6] "Tibia_Curve_proximal_medial_lateral"  
+
+>> Semilandmark curve around proximal articulation with femur between Tibia_Medial_condyle and Tibia_Lateral_condyle
+   
+[7] "Tibia_Curve_proximal_lateral_tuberosity"
+
+>> Semilandmark curve around proximal articulation with femur between Tibia_Lateral_condyle and Tibia_Proximal_tuberosity
+ 
+[8] "Tibia_Curve_diaphysis"
+
+>> Semilandmark curve extending along diaphysis of tibia between Tibia_Proximal_tuberosity and Tibia_Distal_align_tuberosity, often demarcated by a sharp ridge, presumably dividing
+distal leg muscle compartments. 
+ 

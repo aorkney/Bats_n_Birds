@@ -1,0 +1,95 @@
+[1] "Femur_Greater_trochanter" 
+
+>> The proximal apex of the greater trochanter of the proximal femur. Faces medially in bats because of rotation of femur to orient patella caudally. 
+Type 2 landmark; local maximum. 
+              
+ [2] "Femur_Lesser_trochanter"  
+
+>> The proximal apex of the lesser trochanter of the proximal femur. Opposed to the greater trochanter. 
+                       
+ [3] "Femur_Fovea_proximal_head"  
+
+>> The footprint of the femoral tendon to the acetabular surface of the pelvis. Type 1
+                 
+ [4] "Femur_trochanteric_fossa"      
+
+>> Cranially facing distal minimum of Y-shaped fossa between trochanters. Type 2
+                  
+ [5] "Femur_Sulcus_greater_trochanter_head"     
+
+>> Point of sythesis between greater trochanteric surface and the lip of the femoral head. Type 1; suspect fusion of distinct ossification centres. 
+
+ [6] "Femur_Sulcus_lesser_trochanter_head" 
+
+>> Point of sythesis between lesser trochanteric surface and the lip of the femoral head. Type 1; suspect fusion of distinct ossification centres. 
+            
+ [7] "Femur_Sulcus_trochanteric_fossa_head"       
+
+>> The point at the cranial proximal aspect of the femur where the fossa between trochanters smoothly meets the femoral head. Type 2.
+     
+ [8] "Femur_Synthesis_Proximal_ridge_diaphysis"       
+
+>> Distal end of muscle attachment crest extending from lesser trochanter along diaphysis. 
+Suspect that this ridge situates the site of attachment of numerous obturator and gemellus muscles involved in hip rotation; probably medial rotation. Type 1. 
+ 
+ [9] "Femur_Deepest_recession_lateral_condyle"    
+   
+>> Homologous to midpoint of medial condyle in most mammals. This is on the same side as the lesser trochanter. Distal femur. Probably location of colateral ligament. Type 1.
+
+[10] "Femur_Proximal_terminus_lateral_condyle"  
+
+>> The femur faces backwards in bats, and this is therefore homologous to the medially located caudally facing synthesis with the diaphysis of the medial condylar ridge of the distal femur. 
+Type 2. 
+       
+[11] "Femur_Interior_proximal_terminus_lateral_condyle"
+
+>> Move medially from Femur_Proximal_terminus_lateral_condyle to find termination of condylar synthesis. Type 2. 
+
+[12] "Femur_Sulcus_condyles" 
+
+>> Distal union of the trough between the two condyles of the distal femur. Type 1, because I think these condyles originate from distinct ossification centres. 
+                          
+[13] "Femur_Interior_proximal_terminus_medial_condyle" 
+
+>> Opposing Femur_Interior_proximal_terminus_lateral_condyle, type 2. 
+
+[14] "Femur_Proximal_terminus_medial_condyle"    
+
+>> Opposing Femur_Proximal_terminus_lateral_condyle, type 2. 
+
+[15] "Femur_Proximal_terminus_medial_condylar_ridge" 
+
+>> The condylar ridge synthesis with the diaphysis, faces caudally; follow the medial condylar ridge to find. Type 1. 
+  
+[16] "Femur_Proximal_terminus_lateral_condylar_ridge"  
+
+>> The condylar ridge synthesis with the diaphysis, faces caudally; follow the lateral condylar ridge to find. Type 1. 
+
+[17] "Femur_Proximal_ridge_curve"     
+
+>> Semilandmark curve tracing insertion of obturator and gemmelus muscles of medial rotation upon the lesser trochanter; extends from 
+Femur_Lesser_trochanter to Femur_Synthesis_Proximal_ridge_diaphysis
+                 
+[18] "Femur_Curve_proximal_head"  
+  
+>> Semilandmark curve tracing the lip of the head of the femur, between Femur_Sulcus_lesser_trochanter_head and Femur_Sulcus_greater_trochanter_head 
+                   
+[19] "Femur_Curve_lateral_condyle" 
+
+>> Semilandmark curve along the laterally facing condyle between Femur_Proximal_terminus_lateral_condyle and Femur_Proximal_terminus_lateral_condylar_ridge  
+          
+[20] "Femur_Curve_medial_condyle"  
+
+>> Semilandmark curve along the medially facing condyle between Femur_Proximal_terminus_medial_condyle and Femur_Proximal_terminus_medial_condylar_ridge  
+                    
+[21] "Femur_Curve_inside_lateral_condyle"  
+
+>> Semilandmark curve along the laterally facing condyle between Femur_Proximal_terminus_lateral_condyle and Femur_Sulcus_condyles
+           
+[22] "Femur_Curve_inside_medial_condyle"   
+
+>> Semilandmark curve along the medially facing condyle between Femur_Proximal_terminus_medial_condyle and Femur_Sulcus_condyles
+            
+[23] "Femur_Curve_diaphysis"    
+
+>> Semilandmark curve along the diaphysis of the femur, extending between Femur_Proximal_terminus_medial_condyle and Femur_Greater_trochanter

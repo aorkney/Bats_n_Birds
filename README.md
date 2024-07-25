@@ -1,8 +1,14 @@
 # Bats_n_Birds
 
-''Evolutionary integration of fore- and 
-hindlimb proportions within the bat wing membrane 
-inhibits ecological adaptation compared to birds.''
+Code repository for Orkney, Boerma and Hedrick 2024, run in R version 4.2.3 This repository contains commented codes to enable readers to reproduce the analyses conducted in Orkney and Hedrick, 2024.
+
+These scripts were run on a machine with the following specifications: Machine specs: 12th Gen Intel(R) Core(TM) i9-12900K 3.20 GHz 128 GB (128 GB usable) 64-bit operating system, x64-based processor
+
+However, no non-standard hardware is required to reproduce the analyses here.
+
+Installation guide: See https://www.r-project.org/ for guidance installing and using R, including expected installation times and the installation of dependant packages.
+
+''evolutionary integration of fore- and hindlimb proportions within the bat wing membrane inhibits ecological adaptation compared to birds.''
 Orkney, Boerma, Hedrick, (2024)
 
 Data: 
@@ -12,6 +18,11 @@ Csize.22.10.2022.RData
 This is an array of centroid sizes of landmark constellations, approximating the volumes of several bones
 in the avian skeleton for the bird species considered here. 
 The source landmark constellations were originally compiled by Bjarnason et al., 2021
+(https://doi.org/10.18563/journal.m3.125)
+
+coords.22.10.2022.RData
+
+This object refers to original landmark constellations prepared from Bjarnason et al., 2021. 
 (https://doi.org/10.18563/journal.m3.125)
 
 tree.22.10.2022.RData
@@ -70,21 +81,24 @@ Bat phylogeny derived from (shi & Rabosky, 2015; https://doi.org/10.1111/evo.126
 
 Scripts: 
 
-Fig 1: Pairwise_integration_across_bodyplans.R
+Fig 1: Pairwise_integration_across_bodyplans.R (Anticipated run time under 1 hour)
 This figure produces plots that map the pairwise evolutionary covariances between the volumes/centroid sizes (this can be referred to as 'proportions' for brevity) of bones across
 bat and bird phylogeny. 
 In effect, this figure shows which bones tend to evolve together or independently of one another, in the bird and bat body plan respectively. Body regions that evolve together 
 in a consorted way, independently of other body regions, are known as 'evolutionary modules'. 
 
-Fig 2: Pairwise_integration_handwing_resolved.R
+
+Fig 2: Pairwise_integration_handwing_resolved.R (Anticipated run time under 30 minutes)
 This figure further probes evolutionary covariances of skeletal proportions within the bat body plan, exploring whether additional insight is gained by subdividing the bat handwing
 into its major supporting digits. 
 
-Fig 3: Polar_ecology_plot.R
+Fig 3: Polar_ecology_plot.R (Run time on aforementioned machine specifications is 11 minutes)
 This figure maps the strength of evolutionary covariance between skeletal proportions and multivariate ordinations of flight-style and foot-use/roosting activities across birds and bats, 
 in order to explore whether there is a coincidence of evolutionary modules in the bird and bat skeletons with the skeletal regions that exhibit the strongest adaptive responses to distinct
 ecological activities. 
 
-Fig 4: Phenogram_pale_core.R
+Fig 4: Phenogram_pale_core.R (Anticipated run time 5 minutes)
 This figure produces an ancestral state reconstruction of the gross proportions of the appendicular skeleton of birds and bats, and computes indices of the accumulation of phenotypic disparity through time. 
 This contributes to discussion, which explores whether differences in evolutionary modules and regionalised ecological adaptation in the bird and bat skeleton may have influenced their gross evolutionary dynamics. 
+
+The aesthetic appearance of plots may differ slightly to the publication versions. 

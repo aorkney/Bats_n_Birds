@@ -81,14 +81,14 @@ Bat phylogeny derived from (shi & Rabosky, 2015; https://doi.org/10.1111/evo.126
 
 Scripts: 
 
-Fig 1: Pairwise_integration_across_bodyplans.R (Anticipated run time under 1 hour)
+Fig 1: Pairwise_integration_across_bodyplans.R (Run time on aforementioned machine specifications is 4 minutes)
 This figure produces plots that map the pairwise evolutionary covariances between the volumes/centroid sizes (this can be referred to as 'proportions' for brevity) of bones across
 bat and bird phylogeny. 
 In effect, this figure shows which bones tend to evolve together or independently of one another, in the bird and bat body plan respectively. Body regions that evolve together 
 in a consorted way, independently of other body regions, are known as 'evolutionary modules'. 
 
 
-Fig 2: Pairwise_integration_handwing_resolved.R (Anticipated run time under 30 minutes)
+Fig 2: Pairwise_integration_handwing_resolved.R (Run time on aforementioned machine specifications is)
 This figure further probes evolutionary covariances of skeletal proportions within the bat body plan, exploring whether additional insight is gained by subdividing the bat handwing
 into its major supporting digits. 
 
@@ -97,7 +97,7 @@ This figure maps the strength of evolutionary covariance between skeletal propor
 in order to explore whether there is a coincidence of evolutionary modules in the bird and bat skeletons with the skeletal regions that exhibit the strongest adaptive responses to distinct
 ecological activities. 
 
-Fig 4: Phenogram_pale_core.R (Anticipated run time 5 minutes)
+Fig 4: Phenogram_pale_core.R (Run time on aforementioned machine specifications is)
 This figure produces an ancestral state reconstruction of the gross proportions of the appendicular skeleton of birds and bats, and computes indices of the accumulation of phenotypic disparity through time. 
 This contributes to discussion, which explores whether differences in evolutionary modules and regionalised ecological adaptation in the bird and bat skeleton may have influenced their gross evolutionary dynamics. 
 

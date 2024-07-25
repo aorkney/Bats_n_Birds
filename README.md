@@ -109,15 +109,21 @@ Supporting materials:
 Annotated llustrations of bat humerus, radius, femur and tibia landmark constellations employed to proxy bone sizes:
 
 Humerus_scheme_07_22_2024.png
+
 Radius_scheme_07_22_2024.png
+
 Femur_scheme_07_22_2024.png
+
 Tibia_scheme_07_22_2024.png
 
 Supporting landmark descriptions, with numbers matching annotated images:
 
 Humerus_landmark_descriptions_20_07_2024.txt
+
 Radius_landmark_descriptions_21_07_2024.txt
+
 Femur_landmark_descriptions_21_07_2024.txt
+
 Tibia_landmark_descriptions_21_07_2024.txt
 
 

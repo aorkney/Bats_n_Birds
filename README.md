@@ -21,11 +21,13 @@ This is an array of centroid sizes of landmark constellations, approximating the
 in the avian skeleton for the bird species considered here. 
 The source landmark constellations were originally compiled by Bjarnason et al., 2021
 (https://doi.org/10.18563/journal.m3.125)
+This file will be generated during data preparation and is not supplied in this GitHub repository.
 
 coords.22.10.2022.RData
 
 This object refers to original landmark constellations prepared from Bjarnason et al., 2021. 
 (https://doi.org/10.18563/journal.m3.125)
+This file will be generated during data preparation and is not supplied in this GitHub repository.
 
 tree.22.10.2022.RData
 

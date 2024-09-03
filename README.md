@@ -112,7 +112,7 @@ Fig 2: Figure_2_final.R (Run time on aforementioned machine specifications is 2 
 This figure further probes evolutionary covariances of skeletal proportions within the bat body plan, exploring whether additional insight is gained by subdividing the bat handwing
 into its major supporting digits. 
 
-Fig 3: Polar_ecology_plot.R (Run time on aforementioned machine specifications is 11 minutes)
+Fig 3: Figure_3_final.R (Run time on aforementioned machine specifications is 11 minutes)
 This figure maps the strength of evolutionary covariance between skeletal proportions and multivariate ordinations of flight-style and foot-use/roosting activities across birds and bats, 
 in order to explore whether there is a coincidence of evolutionary modules in the bird and bat skeletons with the skeletal regions that exhibit the strongest adaptive responses to distinct
 ecological activities. 

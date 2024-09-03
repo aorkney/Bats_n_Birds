@@ -101,7 +101,7 @@ Bird landmark data should be sourced from: https://doi.org/10.18563/journal.m3.1
 A family tree describing bird relationships to each other should be sourced from: https://doi.org/10.5281/zenodo.28343
 The script will require the following additional files: Bird_landmark_info_23Nov2019.csv ; Eco_meta_data.csv
 
-Fig 1: Pairwise_integration_across_bodyplans.R (Run time on aforementioned machine specifications is 4 minutes)
+Fig 1: Figure_1_final.R (Run time on aforementioned machine specifications is 4 minutes)
 This figure produces plots that map the pairwise evolutionary covariances between the volumes/centroid sizes (this can be referred to as 'proportions' for brevity) of bones across
 bat and bird phylogeny. 
 In effect, this figure shows which bones tend to evolve together or independently of one another, in the bird and bat body plan respectively. Body regions that evolve together 

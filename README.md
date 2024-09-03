@@ -108,7 +108,7 @@ In effect, this figure shows which bones tend to evolve together or independentl
 in a consorted way, independently of other body regions, are known as 'evolutionary modules'. 
 
 
-Fig 2: Pairwise_integration_handwing_resolved.R (Run time on aforementioned machine specifications is 2 minutes)
+Fig 2: Figure_2_final.R (Run time on aforementioned machine specifications is 2 minutes)
 This figure further probes evolutionary covariances of skeletal proportions within the bat body plan, exploring whether additional insight is gained by subdividing the bat handwing
 into its major supporting digits. 
 

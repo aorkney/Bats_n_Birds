@@ -175,7 +175,7 @@ bat.tree <- read.tree('chiroptera.no_outgroups.absolute.tre')
 # we must therefore prune the phylogeny:  
 pruned.tree.bats <- keep.tip(bat.tree,taxa)
 
-metadata <- read.csv('Bat_CT_process_list_Andrew_only.csv')
+metadata <- read.csv('Bat_CT_process_list_Andrew_only_upload_copy.csv')
 # Metadata file of bat project information
 
 masses.bats <- metadata$Mass[ match(taxa,metadata$Shi_match) ]

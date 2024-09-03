@@ -146,7 +146,7 @@ bat.tree <- read.tree('chiroptera.no_outgroups.absolute.tre')
 
 pruned.tree.bats <- keep.tip(bat.tree,taxa)
 
-metadata <- read.csv('Bat_CT_process_list_Andrew_only.csv')
+metadata <- read.csv('Bat_CT_process_list_Andrew_only_upload_copy.csv')
 masses.bats <- metadata$Mass[ match(taxa,metadata$Shi_match) ]
 names(masses.bats) <- taxa
 # Read bat metadata, extract body masses

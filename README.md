@@ -53,6 +53,13 @@ bird species considered in this study. The flight style scores were expanded fro
 (Taylor, G. & Thomas, A. Evolutionary Biomechanics (Oxford Univ. Press, 2014)), see Orkney et al., 2021 (https://doi.org/10.1038/s41559-021-01509-w)
 The foot use scores were originally published in Orkney et al., 2021, and were compiled by Brigit C Tronrud. 
 
+Bird_landmark_info_23Nov2019.csv
+This is a metadata file containing information required to extract data from the Bjarnason Landmark deposition.
+
+Eco_meta_data.csv
+This is a metadata file containing bird genus names and masses require for data preparation.
+(it also contains a variety of other information but it is not needed here)
+
 Bat_CT_process_list_Andrew_only_upload_copy.csv
 
 This is a spreadsheet of metadata related to bat skeletal material that was collected and processed

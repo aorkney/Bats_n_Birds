@@ -57,7 +57,7 @@ Bird_landmark_info_23Nov2019.csv
 This is a metadata file containing information required to extract data from the Bjarnason Landmark deposition.
 
 Eco_meta_data.csv
-This is a metadata file containing bird genus names and masses require for data preparation.
+This is a metadata file containing bird genus names and masses required for data preparation.
 (it also contains a variety of other information but it is not needed here)
 
 Bat_CT_process_list_Andrew_only_upload_copy.csv

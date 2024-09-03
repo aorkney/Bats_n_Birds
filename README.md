@@ -31,6 +31,7 @@ tree.22.10.2022.RData
 
 This is a phylogenetic tree pruned from Prum et al., 2015 (https://doi.org/10.1038/nature15697), 
 representing the evolutionary relationships between the bird species considered here.
+This file will be generated during data preparation and is not supplied in this GitHub repository. 
 
 tree.names.22.10.2022.RData
 
@@ -50,7 +51,7 @@ bird species considered in this study. The flight style scores were expanded fro
 (Taylor, G. & Thomas, A. Evolutionary Biomechanics (Oxford Univ. Press, 2014)), see Orkney et al., 2021 (https://doi.org/10.1038/s41559-021-01509-w)
 The foot use scores were originally published in Orkney et al., 2021, and were compiled by Brigit C Tronrud. 
 
-Bat_CT_process_list_Andrew_only.csv
+Bat_CT_process_list_Andrew_only_upload_copy.csv
 
 This is a spreadsheet of metadata related to bat skeletal material that was collected and processed
 as part of this study.
@@ -79,9 +80,17 @@ employed under the Hedrick Lab and leveraging datasets and assets from multiple 
 
 chiroptera.no_outgroups.absolute.tre 
 
-Bat phylogeny derived from (shi & Rabosky, 2015; https://doi.org/10.1111/evo.12681) This phylogeny is not provided in this GitHub repository.
+Bat phylogeny derived from (shi & Rabosky, 2015; https://doi.org/10.1111/evo.12681)
+This phylogeny is not provided in this GitHub repository.
 
 Scripts: 
+
+Data preparation:
+Bird_data_preparation_08_30_2024.R (Run time under 5 minutes)
+This script loads and prepares datasets for subsequent analysis. 
+Bird landmark data should be sourced from: https://doi.org/10.18563/journal.m3.125
+A family tree describing bird relationships to each other should be sourced from: https://doi.org/10.5281/zenodo.28343
+The script will require the following additional files: Bird_landmark_info_23Nov2019.csv ; Eco_meta_data.csv
 
 Fig 1: Pairwise_integration_across_bodyplans.R (Run time on aforementioned machine specifications is 4 minutes)
 This figure produces plots that map the pairwise evolutionary covariances between the volumes/centroid sizes (this can be referred to as 'proportions' for brevity) of bones across

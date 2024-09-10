@@ -1,5 +1,7 @@
 # Bats_n_Birds
 
+[![DOI](https://zenodo.org/badge/788169515.svg)](https://zenodo.org/doi/10.5281/zenodo.13742208)
+
 ''evolutionary integration of fore- and hindlimb proportions within the bat wing membrane inhibits ecological adaptation compared to birds.''
 Orkney, Boerma, Hedrick, (2024)
 

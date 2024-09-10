@@ -34,6 +34,7 @@ tree.22.10.2022.RData
 This is a phylogenetic tree pruned from Prum et al., 2015 (https://doi.org/10.1038/nature15697), 
 representing the evolutionary relationships between the bird species considered here.
 This file will be generated during data preparation and is not supplied in this GitHub repository. 
+The tree file 'Avian-TimeTree.tre' may be sourced from: https://github.com/carolinafishes/Prum_et_al_2015/blob/v.1.0.0/Trees/BEAST/Avian-TimeTree.tre
 
 tree.names.22.10.2022.RData
 
